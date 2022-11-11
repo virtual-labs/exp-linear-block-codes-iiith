@@ -93,10 +93,13 @@ h1 {
     justify-content: flex-start;
 }
 
-
-#observations {
+#observations,
+#observations1,
+#observations2,
+#observations3{
     font-size: 1.25em;
 }
+
 
 .box-question {
     border: solid black;
@@ -122,8 +125,44 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+@media screen and (min-width: 400px) {
+    .field {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        padding-top: 1em;
+        display: inline-flex;
 
-/* Error Detection */
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .field {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-top: 1em;
+        display: inline-flex;
+    }
+
+}
+
+#a1,
+#a2,
+#a3,
+#b1,
+#b2,
+#b3,
+#b4,
+#c1, 
+#c2,
+#c3,
+#c4 {
+    width: 5.5em;
+    padding: 0.5em 1em;
+    border: groove;
+    border-radius: 0.1em;
+    background-color: #f1f1f1;
+}
 
 select {
     width: auto;
