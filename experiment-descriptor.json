@@ -28,13 +28,6 @@
       "target": "pretest.html"
     },
     {
-      "target": "linear-dependence.html",
-      "source": "simulation/linear-dependence.html",
-      "label": "Binary Arithmetic",
-      "unit-type": "task",
-      "content-type": "simulation"
-    },
-    {
       "target": "block-code.html",
       "source": "simulation/block-code.html",
       "label": "Block Codes",
