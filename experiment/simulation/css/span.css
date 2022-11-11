@@ -1,0 +1,265 @@
+.window {
+  z-index: 20;
+}
+
+.jtk-connector {
+  z-index: 4;
+}
+
+.jtk-endpoint {
+  z-index: 5;
+}
+
+.jtk-overlay {
+  z-index: 6;
+}
+
+/* disabling text selection */
+body {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+img {
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+text {
+  pointer-events: none;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.container {
+  margin-top: 1%;
+}
+
+.column {
+  text-align: center;
+}
+
+.components-list {
+  padding: 2% 5%;
+  text-align: center;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: start;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 500;
+}
+
+
+/* for dropping instruction box  */
+
+.instructions-box {
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.instructions-box.expand {
+  max-height: 35em;
+}
+
+.v-instruction-container {
+  border: .2rem solid #97d23d;
+  justify-content: flex-start;
+}
+
+#observations,
+#observations1,
+#observations2,
+#observations3{
+  font-size: 1.25em;
+}
+
+
+.box-question {
+  border: solid black;
+  padding: 1%;
+}
+
+.bit {
+  height: 2.5em;
+  width: 2.5em;
+  padding-left: 0.8em;
+  border: solid black;
+  border-radius: 0.5em;
+  background-color: #fff;
+  font-size: 1em;
+  color: sandybrown;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 400px) {
+  .field {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+      padding-top: 1em;
+      display: inline-flex;
+
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .field {
+      margin-left: 1em;
+      margin-right: 1em;
+      padding-top: 1em;
+      display: inline-flex;
+  }
+
+}
+
+
+@media screen and (max-width: 750px) {
+  .center {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .scroll-box-2,
+  .scroll-box-4,
+  .scroll-box-6 {
+    overflow-x: scroll;
+  }
+
+  #tile-container-2,
+  #tile-container-4,
+  #tile-container-6  {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: inline-flex;
+  }
+
+}
+
+@media screen and (min-width: 751px) {
+  .center {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .scroll-box-2,
+  .scroll-box-4,
+  .scroll-box-6 {
+    display: inline-flex;
+  }
+
+  #tile-container-2,
+  #tile-container-4,
+  #tile-container-6 {
+    display: inline-flex;
+  }
+
+}
+
+
+#top-bar-1,
+#top-bar-2,
+#top-bar-3 {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  box-shadow: 0 0.1em 0.4em 0 rgba(0, 0, 0, 0.3);
+  min-height: 9em;
+  display: flex;
+}
+
+
+#drop-panel-1,
+#drop-panel-2,
+#drop-panel-3 {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  background-color: white;
+  box-shadow: 0 0.1em 0.4em 0 rgba(0, 0, 0, 0.3);
+  min-height: 9em;
+  display: flex;
+}
+
+#tile-container-1,
+#tile-container-3,
+#tile-container-5 {
+  padding-left: 1em;
+  padding-right: 1em;
+  display: inline-flex;
+}
+
+.scroll-box-1,
+.scroll-box-3,
+.scroll-box-5 {
+  overflow-x: scroll;
+}
+
+.tile {
+  background-color: mediumvioletred;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 3em;
+  height: 7em;
+  font-size: 0.9em;
+  cursor: pointer;
+  box-shadow: 0 0.1em 0.4em 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
+  margin: 1em;
+}
+
+.tile2 {
+  background-color: cornflowerblue;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 3em;
+  height: 7em;
+  font-size: 0.9em;
+  cursor: pointer;
+  box-shadow: 0 0.1em 0.4em 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
+  margin: 1em;
+}

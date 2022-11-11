@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>
+        Error Detection
+    </title>
+</head>
+
+<body onload="getNumber()">
+
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-one-quarter v-instruction-title">
+                Tasks
+            </div>
+            <div class="column">
+                <div class="v-tabs">
+                    <ul>
+
+                        <li id="Task1" onclick="window.location.href = 'block-code.html';">
+                            <a>
+                                Block Codes
+                            </a>
+                        </li>
+
+                        <li id="Task2" onclick="window.location.href = 'encoding-repetition.html';">
+                            <a>
+                                Encoding - REP Codes
+                            </a>
+                        </li>
+
+                        <li id="Task3" onclick="window.location.href = 'encoding-spc.html';">
+                            <a>
+                                Encoding - SPC Codes
+                            </a>
+                        </li>
+
+                        <li id="Task4" onclick="window.location.href = 'decoding.html';">
+                            <a>
+                                Majority Logic Decoding
+                            </a>
+                        </li>
+
+                        <li class="is-active" id="Task5">
+                            <a>
+                                Error Detection
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- <h1 style="text-align: center;">Error Detection</h1> -->
+
+        <div class="columns is-centered">
+            <div class="column">
+                <div class="v-collapsible-instruction-container v-instruction-container">
+                    <div class="v-collapsible is-size-5">Instructions</div>
+                    <div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+                        <ul style="list-style: disc;">
+                            <b>Quick theory overview:</b>
+
+                            <li>
+                                A codeword of a Single Parity Check Code is error-free if the XOR of all its bits is
+                                equal to 0.
+                            </li>
+                        </ul>
+                        <br>
+                        <ul style="list-style: disc;">
+                            <b>Procedure:</b>
+
+                            <li>
+                                Choose an option from the drop-down and click on <b>Submit</b>.
+                            </li>
+
+                            <li>
+                                The correctness of the entered answer is displayed in <b>Observations</b>.
+                            </li>
+
+                            <li>
+                                <b>Refresh</b> - Generates another codeword.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="columns is-centered">
+        <div class="column is-11-desktop is-12-tablet is-12-mobile">
+            <div class="v-datalist-container components-list">
+                <p>Alice encodes 5-bit message using a (6, 5) Single Parity Check Code and sends it through the
+                    channel.
+                    Bob receives the noise affected version of the transmitted codeword. If the message is error free, he tells Alice that he has
+                    received the message.
+                    If he detects an error in the message, he asks Alice to resend the message.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+        style="margin-top:-1.5%">
+        <div class="column is-8-desktop is-12-tablet is-12-mobile">
+            <div class="box-question">
+                <img src="./images/error-detection.png" width="500">
+                <br>
+
+                <form action="" method="get" id="form" onsubmit="return false">
+                    If Bob has received <span id="bob" style="color: limegreen;"> </span>, what is he going
+                    to tell Alice?
+                    <br>
+                    <br>
+                    <label></label>
+                    <select id="choose">
+                        <option value="select">--- Select ---</option>
+                        <option value="Received">Received</option>
+                        <option value="Resend">Resend</option>
+                    </select>
+
+                </form>
+                <br>
+                <button class="v-button" role="button" onclick="verify()"> Submit </button>
+                <button class="v-button" role="button" onclick="ref()"> Refresh </button>
+
+
+            </div>
+        </div>
+
+
+        <div class="column is-3-desktop is-4-tablet is-12-mobile">
+            <div class="v-datalist-container components-list">
+                <div class="v-datalist-title">Observations</div>
+                <div id="observations">
+                    <span id="answer">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./js/error-detection.js"></script>
+</body>
+
+</html>
