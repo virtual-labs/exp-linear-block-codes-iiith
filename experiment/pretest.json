@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "\item Consider three vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 1 & 0 & 0 & 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 1 & 1 & 0 & 1 \end{bmatrix}, \mbox{ and } \mathbf{v}_3 = \begin{bmatrix} 0 & 0 & 1 & 0 & 1 \end{bmatrix}$ defined over $\mathbb{F}_2$. What will be  
+      "question": "Consider three vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 1 & 0 & 0 & 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 1 & 1 & 0 & 1 \end{bmatrix}, \mbox{ and } \mathbf{v}_3 = \begin{bmatrix} 0 & 0 & 1 & 0 & 1 \end{bmatrix}$ defined over $\mathbb{F}_2$. What will be  
         $\mathbf{v}_1+\mathbf{v}_2+\mathbf{v}_3$?",
       "answers": {
         "a": "$\begin{bmatrix} 1 & 2 & 2 & 0 & 3 \end{bmatrix}$",
