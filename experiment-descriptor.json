@@ -30,14 +30,14 @@
     {
       "target": "linear-dependence.html",
       "source": "simulation/linear-dependence.html",
-      "label": "Binary Arithmetic",
+      "label": "Part-1: Preliminaries",
       "unit-type": "task",
       "content-type": "simulation"
     },
     {
       "target": "block-code.html",
       "source": "simulation/block-code.html",
-      "label": "Block Codes",
+      "label": "Part-2: Linear Block Codes",
       "unit-type": "task",
       "content-type": "simulation"
     },
