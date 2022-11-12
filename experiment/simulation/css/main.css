@@ -77,17 +77,6 @@ h1 {
 }
 
 
-/* for dropping instruction box  */
-
-.instructions-box {
-    overflow: hidden;
-    transition: all .5s ease;
-}
-
-.instructions-box.expand {
-    max-height: 35em;
-}
-
 .v-instruction-container {
     border: .2rem solid #97d23d;
     justify-content: flex-start;
