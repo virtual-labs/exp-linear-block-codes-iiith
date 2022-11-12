@@ -23,7 +23,6 @@ There are two tasks in the **Preliminaries** section.
 * The correctness of the entered answer is displayed in **Observations**.
 ---
 
-<br>
 ### Part-2: Linear Block Codes
 There are five tasks in the **Linear Block Codes** section.
 <br>
