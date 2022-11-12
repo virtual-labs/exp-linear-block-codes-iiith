@@ -308,7 +308,7 @@ For example, the dimension of the vector space $\mathbb{F}_2^3$ is equal to $3$ 
 
 ## 2. Linear block codes
 
-![alt text](.\Images\fig1.png)
+![alt text](.\images\fig1.png)
 
 Channel codes (or error correcting codes) are used in any digital communication system to provide a reliable communication over a noisy communication channel. Figure 1 shows a part of a digital communication system focusing on the channel encoder-decoder (refer [1, Ch. 1] for a detailed description of a digital communication system). Suppose the transmitter wants to send a bit-stream over a noisy communication channel. A communication channel may corrupt this bit-stream. 
 
@@ -389,7 +389,7 @@ binary symmetric channel of cross-over probability $p$, denoted by BSC($p$). A f
 In this remark, we shall describe how noise is modeled according to the binary symmetric channel.
 As shown in Figure 2 for BSC($p$), a transmitted bit is flipped independently with probability $p$._
 
-![alt text](.\Images\fig2.png)
+![alt text](.\images\fig2.png)
 
 _Without loss of generality we assume that $p < 1/2$, since when $p > 1/2$, one can first flip the entire received bit sequence and use the decoding algorithms developed for the the case when $p < 1/2$. For example, when a vector $\begin{bmatrix} 0 & 1 & 1\end{bmatrix}$ is transmitted over BSC$(p)$, the$ probability of receiving the vector $\begin{bmatrix} 1 & 1 & 0\end{bmatrix}$ is equal to $p^2(1-p)$ since the first and the third bits are flipped, whereas the second bit is not flipped. Note that a transmitted vector can get flipped to any vector in $\mathbb{F}_2^n$._
 
@@ -410,7 +410,7 @@ $\mathbf{v} = \begin{bmatrix} m_0 & m_1 & \ldots & m_{n-2}& p\end{bmatrix}$, whe
 For example for $(3,2)$ SPC code, 
 the messages and the corresponding codewords are given below:
 
-![alt text](.\Images\fig3.png)
+![alt text](.\images\fig3.png)
 
 
 Let us now illustrate how SPC codes can be used for detection of some of the error patterns.
