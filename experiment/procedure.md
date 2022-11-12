@@ -8,7 +8,7 @@ There are two tasks in the **Preliminaries** section.
 **Procedure for Linear-Independence:**
 * The objective of this task is to find whether the given vectors are linearly independent or not.
 * There are three examples. Attempt all of them. 
-* In each example, enter the values of $a_1, a_2, a_3, a_4 \in \{0, 1\}$ in the corresponding fields.
+* In each example, enter the values of $a_1, a_2, a_3, a_4 \in \ {0, 1\ }$ in the corresponding fields.
 * Determine whether the vectors are linearly independent or not by choosing one of the options from the drop-down and click on **Submit**.
 * The correctness of the entered answer is displayed in **Observations**.
 * **Next** - Displays the next example.
