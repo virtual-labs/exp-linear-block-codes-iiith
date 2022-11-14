@@ -56,11 +56,11 @@ There are five tasks in the **Linear Block Codes** section.
 * The objective of this task is to find the decoded message by performing majority logic decoding on a received bitstream.
 *   Enter the decoded message and click on **Submit**.
 *   The correctness of the entered answer is displayed in **Observations**.
-*   **Refresh** - Generates another bitstream.
+*   **Next** - Displays the next example. Solve sufficient number of examples.
 ---
 **Procedure for Error Detection:**
 * The objective of this task is to detect whether a received codeword has an error or not.
 * Choose an option from the drop-down and click on **Submit**.
 * The correctness of the entered answer is displayed in **Observations**.
-*  **Refresh** - Generates another codeword.
+*  **Next** - Displays the next example. Solve sufficient number of examples.
 
