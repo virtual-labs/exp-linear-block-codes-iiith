@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "./images/exp1_pre1.png",
+      "question": "<img src='./images/exp1_pre1.png'></img>",
       "answers": {
         "a": "answer1",
         "b": "answer2",
