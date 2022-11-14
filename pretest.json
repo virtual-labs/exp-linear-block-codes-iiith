@@ -1,0 +1,68 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "<img src='./images/exp1_pre1.png'></img>",
+      "answers": {
+        "a": "[1 2 2 0 3]",
+        "b": "[1 0 1 0 1]",
+        "c": "[1 0 0 0 1]",
+        "d": "[2 1 1 0 3]"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp1_pre2.png'></img>",
+      "answers": {
+        "a": "[0 2 2 0 1]",
+        "b": "[1 1 1 0 0]",
+        "c": "[1 1 1 0 1]",
+        "d": "[1 0 1 0 1]"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp1_pre3.png'></img>",
+      "answers": {
+        "a": "True",
+        "b": "False",
+        "c": "Data insufficient"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp1_pre4.png'></img>",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp1_pre5.png'></img>",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp1_pre6.png'></img>",
+      "answers": {
+        "a": "[0 1 1 0 1 1 1]",
+        "b": "[0 1 0 0 1 1 1]",
+        "c": "[0 1 1 1 1 1 0]",
+        "d": "[0 1 1 0 1 1 0]"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}

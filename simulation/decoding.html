@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>
+        Majority Logic Decoding
+    </title>
+</head>
+
+<body onload="getNumber()">
+
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-one-quarter v-instruction-title">
+                Tasks
+            </div>
+            <div class="column">
+                <div class="v-tabs">
+                    <ul>
+
+                        <li id="Task1" onclick="window.location.href = 'block-code.html';">
+                            <a>
+                                Block Codes
+                            </a>
+                        </li>
+
+                        <li id="Task2" onclick="window.location.href = 'encoding-repetition.html';">
+                            <a>
+                                Encoding - REP Codes
+                            </a>
+                        </li>
+
+                        <li id="Task3" onclick="window.location.href = 'encoding-spc.html';">
+                            <a>
+                                Encoding - SPC Codes
+                            </a>
+                        </li>
+
+                        <li class="is-active" id="Task4">
+                            <a>
+                                Majority Logic Decoding
+                            </a>
+                        </li>
+
+                        <li id="Task5" onclick="window.location.href = 'error-detection.html';">
+                            <a>
+                                Error Detection
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- <h1 style="text-align: center;">Encoding</h1> -->
+
+        <div class="columns is-centered">
+            <div class="column">
+                <div class="v-collapsible-instruction-container v-instruction-container">
+                    <div class="v-collapsible is-size-5">Instructions</div>
+                    <div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+                        <ul style="list-style: disc;">
+                            <b>Quick theory overview:</b>
+                            <li>
+                                In majority logic decoding, the received n-bit vector
+                                is decoded as 1 if the number of 1's are in it are in majority, otherwise it is
+                                decoded as 0.
+                            </li>
+                        </ul>
+                        <br>
+                        <ul style="list-style: disc;">
+                            <b>Procedure:</b>
+
+                            <li>
+                                Enter the decoded message and click on <b>Submit</b>.
+                            </li>
+
+                            <li>
+                                The correctness of the entered answer is displayed in <b>Observations</b>.
+                            </li>
+
+                            <li>
+                                <b>Next</b> - Displays the next example. Solve sufficient number of examples.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="columns is-centered">
+        <div class="column is-11-desktop is-12-tablet is-12-mobile">
+            <div class="v-datalist-container components-list">
+                <p>A 3-bit message is encoded using a REP-3 Code. After passing through a Binary Symmetric
+                    Channel, the
+                    received bitstream is <span id="bitstream" style="color: blue;"></span>. Decode
+                    the received bitstream using majority logic decoding.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+        style="margin-top:-1.5%">
+        <div class="column is-8-desktop is-12-tablet is-12-mobile">
+            <div class="box-question">
+                <img src="./images/decoding.png">
+
+
+                <form action="" method="get" id="form" onsubmit="return false">
+
+                    What is the decoded <b>3-bit</b> message?
+                    <br>
+                    <br>
+                    <label for="m1"> </label>
+                    <input type="number" class="bit" id="m1" min="0" max="1">
+
+                    <label for="m2"> </label>
+                    <input type="number" class="bit" id="m2" min="0" max="1">
+
+                    <label for="m3"> </label>
+                    <input type="number" class="bit" id="m3" min="0" max="1">
+                </form>
+                <br>
+
+                <button class="v-button" onclick="verify()" form="form">Submit</button>
+                <button class="v-button" onclick="ref()" form="form">Next</button>
+
+            </div>
+        </div>
+
+
+        <div class="column is-3-desktop is-4-tablet is-12-mobile">
+            <div class="v-datalist-container components-list">
+                <div class="v-datalist-title">Observations</div>
+                <div id="observations">
+
+                    <span id="answer">
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+    <script src="./js/decoding.js"></script>
+</body>
+
+</html>
