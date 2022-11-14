@@ -5,26 +5,6 @@
     font-size: 1.25em;
 }
 
-
-.bit {
-    height: 2.5em;
-    width: 2.5em;
-    padding-left: 0.8em;
-    border: solid black;
-    border-radius: 0.5em;
-    background-color: #fff;
-    font-size: 1em;
-    color: sandybrown;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-}
-
 @media screen and (min-width: 400px) {
     .field {
         margin-left: 1.5em;
