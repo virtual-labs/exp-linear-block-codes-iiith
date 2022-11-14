@@ -1,39 +1,77 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "<img src='./images/exp1_post1.png'></img>",
+        "answers": {
+          "a": "True",
+          "b": "False",
+          "c": "Data insufficient"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "<img src='./images/exp1_post2.png'></img>",
+        "answers": {
+          "a": "1",
+          "b": "2",
+          "c": "3",
+          "d": "4"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question": "<img src='./images/exp1_post3.png'></img>",
+        "answers": {
+          "a": "Yes",
+          "b": "No"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "<img src='./images/exp1_post4.png'></img>",
+        "answers": {
+          "a": "a\u2081=0, a\u2082=0, a\u2083=0, a\u2084=0, Linearly independent vectors",
+          "b": "a\u2081=1, a\u2082=1, a\u2083=0, a\u2084=-1, Linearly dependent vectors",
+          "c": "a\u2081=1, a\u2082=1, a\u2083=0, a\u2084=1, Linearly independent vectors",
+          "d": "a\u2081=1, a\u2082=1, a\u2083=0, a\u2084=1, Linearly dependent vectors"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "The set of vectors {10101, 10010, 01110, 11111, 11000} correspond to linear or non-linear block code?",
+        "answers": {
+          "a": "Linear block code",
+          "b": "Non-linear block code"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "The encoded the message sequence 0 1 0 using REP-7 code is given by",
+        "answers": {
+          "a": "0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0",
+          "b": " 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0",
+          "c": "1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0",
+          "d": "None of the above"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      },
+      {
+        "question": "The encoded the message sequence 1 0 0 0 1 0 1 1 0 1 1 1 using SPC(4, 3) code is given by",
+        "answers": {
+          "a": "1 0 0 0 1 1 0 1 1 1 0 1 1 1 1",
+          "b": "1 0 0 0 0 1 0 1 1 1 0 1 1 1 0",
+          "c": " 1 0 0 1 0 1 0 1 1 1 0 0 1 1 1 1",
+          "d": " 1 0 0 1 0 1 0 1 0 1 0 0 0 1 1 1"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+      }
+    ]
+  }
