@@ -153,7 +153,6 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
 -   *Multiplication of a vector and a matrix*:For a vector $\mathbf{v} \in  \mathbb{F}_2^n$ and a matrix $M \in \mathbb{F}_2^{n \times m}$, $\mathbf{v} \cdot M$ is given by
 
     $$
-
     \begin{align}
     \mathbf{v} \cdot M &= 
     \begin{bmatrix}v_1 & v_2& \ldots& v_n\end{bmatrix}
@@ -196,11 +195,11 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
 In this section, we shall provide preliminaries about  vector space spanned the given set of finite number of vectors, subspace of a vector space, linearly independent vectors, basis of a vector space, dimension of a vector space. Towards defining the vector space spanned by the given set of vectors, we first define linear combination of the given set of vectors and scalars.
 
 **Definition 3** _(Linear combination): The linear combination of the given set of  vectors $\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m \in \mathbb{F}_2^n$ and the corresponding set of scalars $a_1, a_2, \ldots, a_m \in \mathbb{F}_2$ is defined as a vector $\mathbf{v}$ obtained as_
-$
+$$
 \begin{align*}  
 \mathbf{v} = a_1\mathbf{v}_1 + a_2\mathbf{v}_2+ \ldots + a_m\mathbf{v}_m. 
 \end{align*}
-$
+$$
 For example, the linear combination of 
 $\mathbf{v}_1 = \begin{bmatrix} 1 & 1 & 0\end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 1 & 0\end{bmatrix}, \mathbf{v}_3 = \begin{bmatrix} 1 & 1 & 1\end{bmatrix} \in \mathbb{F}_2^3$ 
 and the corresponding set of scalars $a_1=0, a_2 = 1, a_3 = 0 \in \mathbb{F}_2$ is equal to $\begin{bmatrix} 0 & 1 & 0\end{bmatrix}$. 
@@ -219,7 +218,7 @@ This vector space $V$ is also called as the span of the vectors $\mathbf{v}_1 , 
 Note that a vector space is essentially the set of all possible linear combinations of the given set of vectors. Let us consider some examples for vector spaces. 
 
 - Example-1: It can be verified that $\mathbb{F}_2^4$ is a vector space spanned by the following set of vectors 
-$ \begin{align*}  
+$$\begin{align*}  
 \mathbf{F}_2^4 = 
 \hspace{0.05in}{span} \{\mathbf{e}_1 , \mathbf{e}_2, \mathbf{e}_3, \mathbf{e}_4\} 
 = \hspace{0.05in}{span}
@@ -228,12 +227,11 @@ $ \begin{align*}
 \begin{bmatrix} 0 \\ 0 \\ 1 \\ 0\end{bmatrix}, 
 \begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \end{bmatrix} 
 \right\}  \hspace{1.4cm} (2)
-\end{align*}$
+\end{align*}$$
 - Example-2: For any integer $n$, it can be verified that $\mathbb{F}_2^n$ is a vector space.
 
 - Example-3: The vector space spanned by the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 0 & 1 \end{bmatrix}$  and $\mathbf{v}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix}$ is given by
-$$
-\begin{align*}
+$$\begin{align*}
 V = \hspace{0.05in}{span} \{\mathbf{v}_1 , \mathbf{v}_2, \mathbf{v}_3\} = 
 \left\{
 \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, 
@@ -244,13 +242,12 @@ V = \hspace{0.05in}{span} \{\mathbf{v}_1 , \mathbf{v}_2, \mathbf{v}_3\} =
 \begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix},
 \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}
 \right\}  \hspace{0.3cm} (3)
-\end{align*}
-$$
+\end{align*}$$
 Note that $V = \mathbf{F}_2^3$ since it consists of all possible vectors in $\mathbf{F}_2^3$. 
 
 - Example-4: Consider the vector space spanned by  
 the vectors $\mathbf{v}_1$ and  $\mathbf{v}_2$ defined in Example-3. It is given by
-$\begin{align*}
+$$\begin{align*}
 W\hspace{0.3cm} = \hspace{0.3cm}{span}\{\mathbf{v}_1, \mathbf{v}_2\}
 = \left\{
 \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}, 
@@ -258,7 +255,7 @@ W\hspace{0.3cm} = \hspace{0.3cm}{span}\{\mathbf{v}_1, \mathbf{v}_2\}
 \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, 
 \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
 \right\} \hspace{3cm} (4)
-\end{align*}$
+\end{align*}$$
 
 We shall next define a subspace of a vector space.
 
@@ -356,10 +353,10 @@ We shall next define the Hamming weight of a vector $\mathbf{v} \in \mathbf{F}_2
 For example, the Hamming weight of the vector $\mathbf{v} = \begin{bmatrix} 1 & 0 & 0 & 1 & 1 \end{bmatrix} \in \mathbb{F}_2^5$ is equal to $3$. For the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 0 & 1 & 1 \end{bmatrix} \hspace{0.1cm}{and}\hspace{0.1cm} \mathbf{v}_2 = \begin{bmatrix} 1 & 0 & 0 & 0 & 0 \end{bmatrix}$, the Hamming distance $d_H(\mathbf{v}_1, \mathbf{v}_2) = 2$. We shall next define the minimum distance of a block code.
 
 **Definition 13** _(Minimum distance $d_{min}$ of a block code $\mathcal{C}(n,M)$): The minimum distance $d_{min}$ of the given block code is defined as  the minimum Hamming distance between any two codewords of the code, i.e._,
-$\begin{align*}  
+$$\begin{align*}  
 \hspace{1in}d_{min} \coloneqq \min \left\{ d_H(\mathbf{v}_1, \mathbf{v}_2) \hspace{0.1in}{ such \hspace{0.1in} that } \hspace{0.1in} \mathbf{v}_1, \mathbf{v}_2 \in \mathcal{C}(n,M) \right\}.
 \hspace{1in} 
-\end{align*}$
+\end{align*}$$
 
 
 For the linear blocks it can be proved that, the minimum distance is equal the minimum Hamming weight of a non-zero codeword. A linear block code of length $n$, dimension $k$, and minimum distance $d_{min}$ is denoted by $\mathcal{C}(n,k, d_{min})$. 
@@ -404,9 +401,9 @@ the messages and the corresponding codewords are given below:
 
 Let us now illustrate how SPC codes can be used for detection of some of the error patterns.
 If $\mathbf{v} = \begin{bmatrix}v_1 & v_2 & \ldots & v_n \end{bmatrix}$ is a codeword of $(n, n-1)$ SPC then it satisfies the parity check equation given below
-$\begin{align*}
+$$\begin{align*}
 v_1 + v_2 + \ldots + v_n = 0. \hspace{0.9cm} (5)
-\end{align*}$ 
+\end{align*}$$ 
 The property of SPC codes given in Eq. (5) is used to for single bit error detection. 
 Suppose the codeword $\mathbf{v} = \begin{bmatrix}v_1 & v_2 & \ldots & v_n \end{bmatrix}$ of $(n,n-1)$ SPC code is transmitted and the received vector is such that one of the bit is flipped. Then the received vector will not satisfy the parity check equation of 
 Eq. (5). This will indicate that that an error has occurred. Note that this will not help to identity the location of the error. Eq. (5) will just help us to _detect_ whether one-bit is flipped or not.  
