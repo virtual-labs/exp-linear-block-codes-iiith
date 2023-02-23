@@ -25,8 +25,8 @@ vectors and matrices that are defined over a finite field. In order to
 define a finite field, we need to first define a "binary operation",
 which is provided next.
 
-**Definition 1** *(Binary operation): Let* $\mathbb{F}$ *be a set of elements. A binary  operation* $\*$ *is
-a rule that assigns to each pair of  elements* $a, b \in \mathbb{F}$ *a uniquely defined third element* $c = a \* b \in \mathbb{F}$.
+**Definition 1** *(Binary operation): Let* $\mathbb{F}$ *be a set of elements. A binary  operation* $\star$ *is
+a rule that assigns to each pair of  elements* $a, b \in \mathbb{F}$ *a uniquely defined third element* $c = a \star b \in \mathbb{F}$.
 
 For example, consider the set of real numbers, denoted by $\mathbb{R}$. It can be verified that the addition operation defined for real numbers is a binary operation.  
 <br>
@@ -52,13 +52,13 @@ $\{\mathbb{F}, +, \cdot\}$ *is said to be a field if satisfies the following axi
     that $a + 0 = a$.
 
 -   *Multiplicative identity*: There exist an element $1 \in \mathbb{F}$
-    such that $a \cdot 1 = a$ and $1 \neq 0$.
+    such that $a \cdot 1 = a$ and $1 \ne 0$.
 
 -   *Additive inverses*: For every $a \in \mathbb{F}$, there exists an
     element in $\mathbb{F}$, denoted by $-a$, called the additive
     inverse of $a$, such that $a + (-a) = 0$.
 
--   *Multiplicative inverses*: For every $a \neq 0 \in \mathbb{F}$,
+-   *Multiplicative inverses*: For every $a \ne 0 \in \mathbb{F}$,
     there exists an element in $\mathbb{F}$, denoted by $a^{-1}$ or
     $1/a$, called the multiplicative inverse of $a$, such that
     $a \cdot a^{-1} = 1$.
@@ -129,12 +129,10 @@ and matrices that are defined over $\mathbb{F}_2$:
      
     v_1 + w_1 \\ v_2 +w_2 \\ \vdots  \\ v_n+w_n
      
-    \end{bmatrix}.
+    \end{bmatrix}.\end{aligned}$$
      
-     \end{aligned}$$
      
-      For example,
-    $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1\end{bmatrix} = \begin{bmatrix} 1 & 0 & 0\end{bmatrix}$.
+For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1\end{bmatrix} = \begin{bmatrix} 1 & 0 & 0\end{bmatrix}$.
 
 -   *Multiplication of a vector by a scalar:*
     For a vector $\mathbf{v} \in \mathbb{F}_2^n$ and a scalar $a \in \mathbb{F}_2$, $a \cdot \mathbf{v}$ is given by
@@ -210,21 +208,18 @@ and the corresponding set of scalars $a_1=0, a_2 = 1, a_3 = 0 \in \mathbb{F}_2$ 
 We shall next provide the definition of a vector space spanned by the given set of vectors.
 
 **Definition 4** _(Vector space spanned the given set of vectors):The vector space $V$ spanned by the vectors $\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m \in \mathbb{F}_2^n$ is defined as_
-$$
-\begin{align*} 
+$$\begin{align*} 
 V =\Big\{ 
 \mathbf{v} \in \mathbb{F}_2^n \Big| \mathbf{v} =  a_1\mathbf{v}_1 + a_2\mathbf{v}_2+ ... + a_m\mathbf{v}_m \hspace{0.1cm} \textit{for some scalars} \hspace{0.1cm}
 a_1, a_2, ..., a_m \in \mathbb{F}_2
 \Big\}.
-\end{align*}
-$$
-This vector space $V$ is also called as the span of the vectors $\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m$, denoted by  $\hspace{0.5in}$ $V = {span} \{\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m\}$. 
+\end{align*}$$
+This vector space $V$ is also called as the span of the vectors $\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m$, denoted by  $V = {span} \{\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m\}$. 
 
 Note that a vector space is essentially the set of all possible linear combinations of the given set of vectors. Let us consider some examples for vector spaces. 
 
 - Example-1: It can be verified that $\mathbb{F}_2^4$ is a vector space spanned by the following set of vectors 
-$ 
-\begin{align*}  
+$ \begin{align*}  
 \mathbf{F}_2^4 = 
 \hspace{0.05in}{span} \{\mathbf{e}_1 , \mathbf{e}_2, \mathbf{e}_3, \mathbf{e}_4\} 
 = \hspace{0.05in}{span}
@@ -233,8 +228,7 @@ $
 \begin{bmatrix} 0 \\ 0 \\ 1 \\ 0\end{bmatrix}, 
 \begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \end{bmatrix} 
 \right\}  \hspace{1.4cm} (2)
-\end{align*}
-$
+\end{align*}$
 - Example-2: For any integer $n$, it can be verified that $\mathbb{F}_2^n$ is a vector space.
 
 - Example-3: The vector space spanned by the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 0 & 1 \end{bmatrix}$  and $\mathbf{v}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix}$ is given by
@@ -256,8 +250,7 @@ Note that $V = \mathbf{F}_2^3$ since it consists of all possible vectors in $\ma
 
 - Example-4: Consider the vector space spanned by  
 the vectors $\mathbf{v}_1$ and  $\mathbf{v}_2$ defined in Example-3. It is given by
-$
-\begin{align*}
+$\begin{align*}
 W\hspace{0.3cm} = \hspace{0.3cm}{span}\{\mathbf{v}_1, \mathbf{v}_2\}
 = \left\{
 \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}, 
@@ -265,8 +258,7 @@ W\hspace{0.3cm} = \hspace{0.3cm}{span}\{\mathbf{v}_1, \mathbf{v}_2\}
 \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}, 
 \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
 \right\} \hspace{3cm} (4)
-\end{align*}
-$
+\end{align*}$
 
 We shall next define a subspace of a vector space.
 
@@ -275,7 +267,7 @@ We shall next define a subspace of a vector space.
 For the examples (Example-3 and 4) mentioned above, $W=\hspace{0.001in}{span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is a subspace of $V=\hspace{0.001in}{span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$.  
 
 
-**Definition 6**_(Linear independence): A given set of vectors
+**Definition 6** _(Linear independence): A given set of vectors
 $\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m \in \mathbb{F}_2^n$ are said to be independent
 if and only if $a_1\mathbf{v}_1 + a_2\mathbf{v}_2+ \ldots + a_m\mathbf{v}_m = \mathbf{0}$ can happen only when $a_1 = a_2 = \ldots = a_m = 0$._ 
 
@@ -291,10 +283,9 @@ Finally, we shall define _basis_ of a vector space and dimension of a vector spa
 - They span the space $V$ 
 
 
-For example consider the vector space $V = \mathbb{F}_2^3$. For this vector space, the set of vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ given in Example-3 is a basis. However the set of vectors
-$\mathbf{w}_1 = \begin{bmatrix} 1 & 0 & 0 \end{bmatrix}, \mathbf{w}_2 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix},\mathbf{w}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix},
-\mathbf{w}_4 = \begin{bmatrix} 1 & 1 & 1 \end{bmatrix}$
-is not a basis for the vector space $\mathbb{F}_2^3$ since they are not linearly independent. Further, the set of vectors $\{\mathbf{w}_1, \mathbf{w}_2\}$ is not a basis for $\mathbb{F}_2^3$ since span $\{\mathbf{w}_1, \mathbf{w}_2\} \neq \mathbb{F}_2^3$. 
+For example consider the vector space $V = \mathbb{F}_2^3$. For this vector space, the set of vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ given in Example-3 is a basis. However the set of vectors 
+$\mathbf{w}_1 = \begin{bmatrix} 1 & 0 & 0 \end{bmatrix}$, $\mathbf{w}_2 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}$, $\mathbf{w}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix}$, $\mathbf{w}_4 = \begin{bmatrix} 1 & 1 & 1 \end{bmatrix}$
+is not a basis for the vector space $\mathbb{F}_2^3$ since they are not linearly independent. Further, the set of vectors $\{\mathbf{w}_1, \mathbf{w}_2\}$ is not a basis for $\mathbb{F}_2^3$ since span $\{\mathbf{w}_1, \mathbf{w}_2\} \ne \mathbb{F}_2^3$. 
 
 
 Note that a basis is not unique. The given vector space can have more that one basis. Can you find one more basis for the vector space $\mathbb{F}_2^3$ (Hint: See Eq (2))? Note that the number of vectors in any two bases will remain the same. This leads to the dimension of a vector space.  
@@ -332,7 +323,7 @@ In the remaining part, we shall discuss the following topics:
 Recall that $\mathbb{F}_2^n$ denotes the vector space of all $n$-tuples over the finite field $\mathbb{F}_2$. Basics of finite fields and vector spaces are provided in Section 1. 
 
 For block codes, the input bit-stream is first divided into vectors of length $k$. Thus the input to a channel encoder is a sequence of vectors of length $k$, also termed as message sequence. Let $\mathbf{m} \in  \mathbb{F}_2^k$ denotes one such $k$-length message vector. 
-To each message $\mathbf{m}$, a block encoder assigns a vector $\mathbf{v} \in  \mathbb{F}_2^n$ of length $n > k$, according to \textit{some rule}. This vector $\mathbf{v}$ is termed as the \textit{codeword} corresponding to message $\mathbf{m}$. Suppose there are $M$ distinct messages. A definition of a block code is given below.  
+To each message $\mathbf{m}$, a block encoder assigns a vector $\mathbf{v} \in  \mathbb{F}_2^n$ of length $n > k$, according to _some rule_. This vector $\mathbf{v}$ is termed as the _codeword_ corresponding to message $\mathbf{m}$. Suppose there are $M$ distinct messages. A definition of a block code is given below.  
 
 
 
@@ -365,12 +356,10 @@ We shall next define the Hamming weight of a vector $\mathbf{v} \in \mathbf{F}_2
 For example, the Hamming weight of the vector $\mathbf{v} = \begin{bmatrix} 1 & 0 & 0 & 1 & 1 \end{bmatrix} \in \mathbb{F}_2^5$ is equal to $3$. For the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 0 & 1 & 1 \end{bmatrix} \hspace{0.1cm}{and}\hspace{0.1cm} \mathbf{v}_2 = \begin{bmatrix} 1 & 0 & 0 & 0 & 0 \end{bmatrix}$, the Hamming distance $d_H(\mathbf{v}_1, \mathbf{v}_2) = 2$. We shall next define the minimum distance of a block code.
 
 **Definition 13** _(Minimum distance $d_{min}$ of a block code $\mathcal{C}(n,M)$): The minimum distance $d_{min}$ of the given block code is defined as  the minimum Hamming distance between any two codewords of the code, i.e._,
-$ 
-\begin{align*}  
+$\begin{align*}  
 \hspace{1in}d_{min} \coloneqq \min \left\{ d_H(\mathbf{v}_1, \mathbf{v}_2) \hspace{0.1in}{ such \hspace{0.1in} that } \hspace{0.1in} \mathbf{v}_1, \mathbf{v}_2 \in \mathcal{C}(n,M) \right\}.
 \hspace{1in} 
-\end{align*}
-$
+\end{align*}$
 
 
 For the linear blocks it can be proved that, the minimum distance is equal the minimum Hamming weight of a non-zero codeword. A linear block code of length $n$, dimension $k$, and minimum distance $d_{min}$ is denoted by $\mathcal{C}(n,k, d_{min})$. 
@@ -391,7 +380,7 @@ As shown in Figure 2 for BSC($p$), a transmitted bit is flipped independently wi
 
 ![alt text](./images/fig2.png)
 
-_Without loss of generality we assume that $p < 1/2$, since when $p > 1/2$, one can first flip the entire received bit sequence and use the decoding algorithms developed for the the case when $p < 1/2$. For example, when a vector $\begin{bmatrix} 0 & 1 & 1\end{bmatrix}$ is transmitted over BSC$(p)$, the$ probability of receiving the vector $\begin{bmatrix} 1 & 1 & 0\end{bmatrix}$ is equal to $p^2(1-p)$ since the first and the third bits are flipped, whereas the second bit is not flipped. Note that a transmitted vector can get flipped to any vector in $\mathbb{F}_2^n$._
+_Without loss of generality we assume that_ $p < 1/2$, _since when_ $p > 1/2$, _one can first flip the entire received bit sequence and use the decoding algorithms developed for the the case when_ $p < 1/2$. _For example, when a vector_ $\begin{bmatrix} 0 & 1 & 1\end{bmatrix}$ _is transmitted over BSC_$(p)$, _the probability of receiving the vector_ $\begin{bmatrix} 1 & 1 & 0\end{bmatrix}$ _is equal to_ $p^2(1-p)$ _since the first and the third bits are flipped, whereas the second bit is not flipped. Note that a transmitted vector can get flipped to any vector in_ $\mathbb{F}_2^n$.
 
 We shall now describe majority logic decoding for repetition codes of odd lengths. First note that, a transmitted codeword can get flipped to any vector in $\mathbb{F}_2^n$ (see Remark 1). According to majority logic decoding, the received vector     $\mathbf{y} \in \mathbb{F}_2^n$ is decoded as $1$ if the number of $1$'s are in it are in majority, otherwise it is decoded as $0$. For example, for REP-$3$ code, when received vector is 
 $\mathbf{y} = \begin{bmatrix} 1 & 1 & 0\end{bmatrix}$, the decoded message is $1$, since the bit is in majority in this $\mathbf{y}$.  
@@ -415,11 +404,9 @@ the messages and the corresponding codewords are given below:
 
 Let us now illustrate how SPC codes can be used for detection of some of the error patterns.
 If $\mathbf{v} = \begin{bmatrix}v_1 & v_2 & \ldots & v_n \end{bmatrix}$ is a codeword of $(n, n-1)$ SPC then it satisfies the parity check equation given below
-$
-\begin{align*}
+$\begin{align*}
 v_1 + v_2 + \ldots + v_n = 0. \hspace{0.9cm} (5)
-\end{align*} 
-$ 
+\end{align*}$ 
 The property of SPC codes given in Eq. (5) is used to for single bit error detection. 
 Suppose the codeword $\mathbf{v} = \begin{bmatrix}v_1 & v_2 & \ldots & v_n \end{bmatrix}$ of $(n,n-1)$ SPC code is transmitted and the received vector is such that one of the bit is flipped. Then the received vector will not satisfy the parity check equation of 
 Eq. (5). This will indicate that that an error has occurred. Note that this will not help to identity the location of the error. Eq. (5) will just help us to _detect_ whether one-bit is flipped or not.  
