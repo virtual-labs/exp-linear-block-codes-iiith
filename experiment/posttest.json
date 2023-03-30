@@ -2,7 +2,7 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "<img src='./images/exp1_post1.png'></img>",
+        "question": "<img src='./images/exp1@post1.png'></img>",
         "answers": {
           "a": "True",
           "b": "False",
@@ -12,7 +12,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1_post2.png'></img>",
+        "question": "<img src='./images/exp1@post2.png'></img>",
         "answers": {
           "a": "1",
           "b": "2",
@@ -23,7 +23,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1_post3.png'></img>",
+        "question": "<img src='./images/exp1@post3.png'></img>",
         "answers": {
           "a": "Yes",
           "b": "No"
@@ -32,7 +32,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1_post4.png'></img>",
+        "question": "<img src='./images/exp1@post4.png'></img>",
         "answers": {
           "a": "a\u2081=0, a\u2082=0, a\u2083=0, a\u2084=0, Linearly independent vectors",
           "b": "a\u2081=1, a\u2082=1, a\u2083=0, a\u2084=-1, Linearly dependent vectors",
@@ -43,7 +43,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "The set of vectors {10101, 10010, 01110, 11111, 11000} correspond to linear or non-linear block code?",
+        "question": "<img src='./images/exp1@post5.png'></img>",
         "answers": {
           "a": "Linear block code",
           "b": "Non-linear block code"
@@ -52,7 +52,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "The encoded the message sequence 0 1 0 using REP-7 code is given by",
+        "question": "<img src='./images/exp1@post6.png'></img>",
         "answers": {
           "a": "0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0",
           "b": " 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0",
@@ -63,7 +63,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "The encoded the message sequence 1 0 0 0 1 0 1 1 0 1 1 1 using SPC(4, 3) code is given by",
+        "question": "<img src='./images/exp1@post7.png'></img>",
         "answers": {
           "a": "1 0 0 0 1 1 0 1 1 1 0 1 1 1 1",
           "b": "1 0 0 0 0 1 0 1 1 1 0 1 1 1 0",
