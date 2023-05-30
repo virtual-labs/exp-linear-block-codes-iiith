@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "$\textbf{1. Consider three vectors } \mathbf{v_1 = \begin{bmatrix} 1 & 1 & 0 & 0 & 1 \end{bmatrix} \textbf{, } v_2 = \begin{bmatrix} 0 & 1 & 1 & 0 & 1 \end{bmatrix}\textbf{, }} \textbf{ and } \mathbf{v_3 = \begin{bmatrix} 0 & 0 & 1 & 0 & 1 \end{bmatrix}} \textbf{ defined over } \mathbb{F}_2. \textbf{ What will be }  \mathbf{ v_1+ v_2+ v_3 ?}$",
+      "question": "$\textbf{1. Consider three vectors } \\mathbf{v_1 = \begin{bmatrix} 1 & 1 & 0 & 0 & 1 \end{bmatrix} \textbf{, } v_2 = \begin{bmatrix} 0 & 1 & 1 & 0 & 1 \end{bmatrix}\textbf{, }} \textbf{ and } \mathbf{v_3 = \begin{bmatrix} 0 & 0 & 1 & 0 & 1 \end{bmatrix}} \textbf{ defined over } \mathbb{F}_2. \textbf{ What will be }  \mathbf{ v_1+ v_2+ v_3 ?}$",
       "answers": {
         "a": "[1 2 2 0 3]",
         "b": "[1 0 1 0 1]",
