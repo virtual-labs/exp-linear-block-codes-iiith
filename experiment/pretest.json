@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "$\mathbf{v_1 = \begin{bmatrix} 1 & 1 & 0 & 0 & 1 \end{bmatrix}}$",
+      "question": "Hey",
       "answers": {
         "a": "[1 2 2 0 3]",
         "b": "[1 0 1 0 1]",
