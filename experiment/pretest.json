@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "$\mathbf{v_3 = \begin{bmatrix} 0 & 0 & 1 & 0 & 1 \end{bmatrix}}$",
+      "question": "1. Consider three vectors $\\mathbf{v}_1 = \\begin{bmatrix} 1 & 1 & 0 & 0 & 1 \\end{bmatrix}$, $\\mathbf{v}_2 = \\begin{bmatrix} 0 & 1 & 1 & 0 & 1 \\end{bmatrix},  \\mathbf{v}_3 = \\begin{bmatrix} 0 & 0 & 1 & 0 & 1 \\end{bmatrix}$ defined over $\\mathbb{F}_2$. What will be $\\mathbf{v}_1+\\mathbf{v}_2+\\mathbf{v}_3?$",
       "answers": {
         "a": "[1 2 2 0 3]",
         "b": "[1 0 1 0 1]",
