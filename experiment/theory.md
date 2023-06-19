@@ -150,10 +150,9 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
     \end{align*}$$
     where the operation $a \cdot v_i$ for $i = 1, 2, \ldots, n$ is performed according to Eq. (1).
 
--   *Multiplication of a vector and a matrix*:For a vector $\mathbf{v} \in  \mathbb{F}_2^n$ and a matrix $M \in \mathbb{F}_2^{n \times m}$, $\mathbf{v} \cdot M$ is given by
+-   *Multiplication of a vector and a matrix*: For a vector $\mathbf{v} \in  \mathbb{F}_2^n$ and a matrix $M \in \mathbb{F}_2^{n \times m}$, $\mathbf{v} \cdot M$ is given by
 
     $$
-    \begin{align}
     \mathbf{v} \cdot M &= 
     \begin{bmatrix}v_1 & v_2& \ldots& v_n\end{bmatrix}
     \cdot \begin{bmatrix}
@@ -167,16 +166,12 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
     v_1 \cdot M_{21} + v_2 \cdot M_{22} + \ldots + v_n \cdot M_{2m} \\
     \vdots \\
     v_1 \cdot M_{n1} + v_2 \cdot M_{n2} + \ldots +  v_n \cdot M_{nm}
-    \end{bmatrix}, 
-    \end{align}
+    \end{bmatrix},
     $$
     where note that each component wise addition and multiplication is performed according to Eq. (1). Consider the following example.
 
     $$
-    \begin{align*}
-  
-    \mathbf{v} \cdot M &= 
- 
+    \begin{align*} 
     \begin{bmatrix}1 & 0& 1\end{bmatrix}
     \cdot \begin{bmatrix}
     0 & 0 & 1& 1 \\
@@ -202,9 +197,8 @@ $$
 $$
 For example, the linear combination of 
 $\mathbf{v}_1 = \begin{bmatrix} 1 & 1 & 0\end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 1 & 0\end{bmatrix}, \mathbf{v}_3 = \begin{bmatrix} 1 & 1 & 1\end{bmatrix} \in \mathbb{F}_2^3$ 
-and the corresponding set of scalars $a_1=0, a_2 = 1, a_3 = 0 \in \mathbb{F}_2$ is equal to $\begin{bmatrix} 0 & 1 & 0\end{bmatrix}$. 
-
-We shall next provide the definition of a vector space spanned by the given set of vectors.
+and the corresponding set of scalars $a_1=0, a_2 = 1, a_3 = 0 \in \mathbb{F}_2$ is equal to $\begin{bmatrix} 0 & 1 & 0\end{bmatrix}$. We shall next provide the
+definition of a vector space spanned by the given set of vectors.
 
 **Definition 4** _(Vector space spanned the given set of vectors):The vector space $V$ spanned by the vectors $\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m \in \mathbb{F}_2^n$ is defined as_
 $$\begin{align*} 
