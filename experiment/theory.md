@@ -153,6 +153,7 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
 -   *Multiplication of a vector and a matrix*: For a vector $\mathbf{v} \in  \mathbb{F}_2^n$ and a matrix $M \in \mathbb{F}_2^{n \times m}$, $\mathbf{v} \cdot M$ is given by
 
     $$
+    \begin{align*} 
     \mathbf{v} \cdot M &= 
     \begin{bmatrix}v_1 & v_2& \ldots& v_n\end{bmatrix}
     \cdot \begin{bmatrix}
@@ -167,6 +168,7 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
     \vdots \\
     v_1 \cdot M_{n1} + v_2 \cdot M_{n2} + \ldots +  v_n \cdot M_{nm}
     \end{bmatrix},
+    \end{align*}
     $$
     where note that each component wise addition and multiplication is performed according to Eq. (1). Consider the following example.
 
