@@ -2,7 +2,7 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "<img src='./images/exp1@post1.png'></img>",
+        "question": "1. The set of vectors $\\left\\{ \\begin{bmatrix}0 \\\\ 1 \\\\ 1 \\\\ 1 \\\\ 0 \\end{bmatrix}, \\begin{bmatrix}1 \\\\ 1 \\\\ 1 \\\\ 1 \\\\ 0 \\end{bmatrix}, \\begin{bmatrix}0 \\\\ 1 \\\\ 1 \\\\ 1 \\\\ 1 \\end{bmatrix} \\right\\}$ defined over $\\mathbb{F}_2$ are linearly independent. True or false?",
         "answers": {
           "a": "True",
           "b": "False",
@@ -12,7 +12,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1@post2.png'></img>",
+        "question": "2. Consider the vectors $\\mathbf{v}_1 = \\begin{bmatrix}0 \\\\ 1 \\\\ 1 \\\\ 0 \\end{bmatrix}, \\mathbf{v}_2 =\\begin{bmatrix}1 \\\\ 0 \\\\ 1 \\\\ 1  \\end{bmatrix}, \\mathbf{v}_3 =\\begin{bmatrix}1 \\\\ 1 \\\\ 0 \\\\ 1  \\end{bmatrix}$ defined over $\\mathbb{F}_2$. The number of vectors in span $\\{\\mathbf{v}_1, \\mathbf{v}_2, \\mathbf{v}_3\\}$ is equal to?",
         "answers": {
           "a": "1",
           "b": "2",
@@ -23,7 +23,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1@post3.png'></img>",
+        "question": "3. Consider the set $\\mathbb{F}_7 =$ $\\{ 0, 1, 2, 3, 4, 5, 6 \\}$. For any $\\mathbf{a, b} \\in \\mathbb{F}_7$ the addition and multiplication operations are defined as below. Does $\\mathbb{F}_7$ form a field or not? $$\\begin{array}{c|ccccccc} + & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline 1 & 1 & 2 & 3 & 4 & 5 & 6 & 0 \\\\ 2 & 2 & 3 & 4 & 5 & 6 & 0 & 1 \\\\ 3 & 3 & 4 & 5 & 6 & 0 & 1 & 2 \\\\ 4 & 4 & 5 & 6 & 0 & 1 & 2 & 3 \\\\ 5 & 5 & 6 & 0 & 1 & 2 & 3 & 4 \\\\ 6 & 6 & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline \\end{array}$$ $$\\begin{array}{c|ccccccc} \\cdot & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\\ 1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\\ 2 & 0 & 2 & 4 & 6 & 1 & 3 & 5 \\\\ 3 & 0 & 3 & 6 & 2 & 5 & 1 & 4 \\\\ 4 & 0 & 4 & 1 & 5 & 2 & 6 & 3 \\\\ 5 & 0 & 5 & 3 & 1 & 6 & 4 & 2 \\\\ 6 & 0 & 6 & 5 & 4 & 3 & 2 & 1 \\\\ \\hline \\end{array}$$",
         "answers": {
           "a": "Yes",
           "b": "No"
@@ -32,18 +32,18 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1@post4.png'></img>",
+        "question": "4. Consider the vectors $\\mathbf{v}_1 = \\begin{bmatrix}1 \\\\ 0 \\\\ 0 \\\\ 1 \\\\ 0 \\end{bmatrix}, \\mathbf{v}_2 =\\begin{bmatrix}1 \\\\ 0 \\\\ 0 \\\\ 1 \\\\ 1  \\end{bmatrix}, \\mathbf{v}_3 = \\begin{bmatrix}0 \\\\ 1 \\\\ 1 \\\\ 0 \\\\ 0  \\end{bmatrix} \\mathbf{v}_4 = \\begin{bmatrix}0 \\\\ 0 \\\\ 0 \\\\ 0 \\\\ 1  \\end{bmatrix}$ defined over $\\mathbb{F}_2$. Can you find scalars $\\mathbf{a_1, a_2, a_3,a_4}$ $\\in$ $\\mathbb{F}_2$ such that $\\mathbf{a_1v_1}+\\mathbf{a_2v_2}+\\mathbf{a_3v_3}+\\mathbf{a_4v_4} = \\mathbf{0}$? Comment whether the set of vectors $\\mathbf{v}_1, \\mathbf{v}_2, \\mathbf{v}_3,$ and $\\mathbf{v}_4$ are linearly independent or not.",
         "answers": {
-          "a": "a\u2081=0, a\u2082=0, a\u2083=0, a\u2084=0, Linearly independent vectors",
-          "b": "a\u2081=1, a\u2082=1, a\u2083=0, a\u2084=-1, Linearly dependent vectors",
-          "c": "a\u2081=1, a\u2082=1, a\u2083=0, a\u2084=1, Linearly independent vectors",
-          "d": "a\u2081=1, a\u2082=1, a\u2083=0, a\u2084=1, Linearly dependent vectors"
+          "a": "$a_1=0, a_2=0, a_3=0, a_4=0$, Linearly independent vectors",
+          "b": "$a_1=1, a_2=1, a_3=0, a_4=-1$, Linearly dependent vectors",
+          "c": "$a_1=1, a_2=1, a_3=0, a_4=1$, Linearly independent vectors",
+          "d": "$a_1=1, a_2=1, a_3=0, a_4=1$, Linearly dependent vectors"
         },
         "correctAnswer": "d",
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1@post5.png'></img>",
+        "question": "5. The set of vectors $\\mathbf{\\{1 0 1 0 1, 1 0 0 1 0, 0 1 1 1 0, 1 1 1 1 1, 1 1 0 0 0 \\}}$ correspond to linear or non-linear block code?",
         "answers": {
           "a": "Linear block code",
           "b": "Non-linear block code"
@@ -52,7 +52,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1@post6.png'></img>",
+        "question": "6. The encoded the message sequence 0 1 0 using REP-7 code is given by",
         "answers": {
           "a": "0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0",
           "b": " 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0",
@@ -63,7 +63,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "<img src='./images/exp1@post7.png'></img>",
+        "question": "7. The encoded the message sequence 1 0 0 0 1 0 1 1 0 1 1 1 using SPC($\\mathbf{4,3}$) code is given by",
         "answers": {
           "a": "1 0 0 0 1 1 0 1 1 1 0 1 1 1 1",
           "b": "1 0 0 0 0 1 0 1 1 1 0 1 1 1 0",
