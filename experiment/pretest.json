@@ -43,7 +43,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "5.  What is the dimension of the vector space given below? $$\\begin{align*} U = \\left\\{ \\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\\\ 0\\\\ 0\\end{bmatrix}, \\begin{bmatrix} 0 \\\\ 1 \\\\ 1 \\\\0\\\\ 1\\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\\\ 0\\\\ 0\\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 1\\end{bmatrix} \\right\\}. \\end{align*}$$",
+        "question": "5. What is the dimension of the vector space given below? $$\\begin{align*} U = \\left\\{ \\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\\\ 0\\\\ 0\\end{bmatrix}, \\begin{bmatrix} 0 \\\\ 1 \\\\ 1 \\\\0\\\\ 1\\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\\\ 0\\\\ 0\\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 1\\end{bmatrix} \\right\\}. \\end{align*}$$",
         "answers": {
           "a": "1",
           "b": "2",
@@ -54,7 +54,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "What is the codeword of $\\mathbf{(7,6)}$ SPC code for the message $\\mathbf{\\begin{bmatrix} 0 & 1 & 1 & 0 & 1 & 1\\end{bmatrix}}$?",
+        "question": "6. What is the codeword of $\\mathbf{(7,6)}$ SPC code for the message $\\mathbf{\\begin{bmatrix} 0 & 1 & 1 & 0 & 1 & 1\\end{bmatrix}}$?",
         "answers": {
           "a": "$\\begin{bmatrix} 0 & 1 & 1 & 0 & 1 & 1& 1\\end{bmatrix}$",
           "b": "$\\begin{bmatrix} 0 & 1 & 0 & 0 & 1 & 1& 1\\end{bmatrix}$",
