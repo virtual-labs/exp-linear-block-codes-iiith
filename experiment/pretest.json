@@ -1,68 +1,68 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "1. Consider three vectors $\\mathbf{v}_1 = \\begin{bmatrix} 1 & 1 & 0 & 0 & 1 \\end{bmatrix}$, $\\mathbf{v}_2 = \\begin{bmatrix} 0 & 1 & 1 & 0 & 1 \\end{bmatrix},  \\mathbf{v}_3 = \\begin{bmatrix} 0 & 0 & 1 & 0 & 1 \\end{bmatrix}$ defined over $\\mathbb{F}_2$. What will be $\\mathbf{v}_1+\\mathbf{v}_2+\\mathbf{v}_3?$",
-      "answers": {
-        "a": "[1 2 2 0 3]",
-        "b": "[1 0 1 0 1]",
-        "c": "[1 0 0 0 1]",
-        "d": "[2 1 1 0 3]"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "1. Consider three vectors $\\mathbf{v}_1 = \\begin{bmatrix} 1 & 1 & 0 & 0 & 1 \\end{bmatrix}$, $\\mathbf{v}_2 = \\begin{bmatrix} 0 & 1 & 1 & 0 & 1 \\end{bmatrix},  \\mathbf{v}_3 = \\begin{bmatrix} 0 & 0 & 1 & 0 & 1 \\end{bmatrix}$ defined over $\\mathbb{F}_2$. What will be $\\mathbf{v}_1+\\mathbf{v}_2+\\mathbf{v}_3?$",
+        "answers": {
+          "a": "$\\begin{bmatrix} 1 & 2 & 2 & 0 & 3 \\end{bmatrix}$",
+          "b": "$\\begin{bmatrix} 1 & 0 & 1 & 0 & 1 \\end{bmatrix}$",
+          "c": "$\\begin{bmatrix} 1 & 0 & 0 & 0 & 1 \\end{bmatrix}$",
+          "d": "$\\begin{bmatrix} 2 & 1 & 1 & 0 & 3 \\end{bmatrix}$"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp1@pre2.png'></img>",
-      "answers": {
-        "a": "[0 2 2 0 1]",
-        "b": "[1 1 1 0 0]",
-        "c": "[1 1 1 0 1]",
-        "d": "[1 0 1 0 1]"
+      {
+        "question": "2. Consider a vector  $\\mathbf{v} = \\begin{bmatrix} 1 & 1 & 0 & 0 \\end{bmatrix}$ and a matrix $M = \\begin{bmatrix} 0 & 0 & 1 & 0 & 1  \\\ 1 & 1 & 0 & 0 & 1  \\\ 1 & 0 & 0 & 1 & 0  \\\ 0 & 0 & 1 & 1 & 0  \\\ \\end{bmatrix}$ defined over $\\mathbb{F}_2$. What will be  $\\mathbf{v} \\cdot M$?",
+        "answers": {
+          "a": "$\\begin{bmatrix} 0 & 2 & 2 & 0 & 1 \\end{bmatrix}$",
+          "b": "$\\begin{bmatrix} 1 & 1 & 1 & 0 & 0 \\end{bmatrix}$",
+          "c": "$\\begin{bmatrix} 1 & 1 & 1 & 0 & 1 \\end{bmatrix}$",
+          "d": "$\\begin{bmatrix} 1 & 0 & 1 & 0 & 1 \\end{bmatrix}$"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp1@pre3.png'></img>",
-      "answers": {
-        "a": "True",
-        "b": "False",
-        "c": "Data insufficient"
+      {
+        "question": "3. The vectors $\\mathbf{v}_1 = \\begin{bmatrix}1 & 1 & 0 & 1 \\end{bmatrix}, \\mathbf{v}_2 = \\begin{bmatrix}1 & 0 & 0 & 1 \\end{bmatrix}$  and $\\mathbf{v}_3 = \\begin{bmatrix} 1 & 0 & 1 & 0 \\end{bmatrix}$ defined over $\\mathbb{F}_2$ are linearly dependent. True or false?",
+        "answers": {
+          "a": "True",
+          "b": "False",
+          "c": "Data insufficient"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp1@pre4.png'></img>",
-      "answers": {
-        "a": "Yes",
-        "b": "No"
+      {
+        "question": "4. The set of integers form a field. True of false?",
+        "answers": {
+          "a": "True",
+          "b": "False"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp1@pre5.png'></img>",
-      "answers": {
-        "a": "1",
-        "b": "2",
-        "c": "3",
-        "d": "4"
+      {
+        "question": "<img src='./images/exp1@pre5.png'></img>",
+        "answers": {
+          "a": "1",
+          "b": "2",
+          "c": "3",
+          "d": "4"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp1@pre6.png'></img>",
-      "answers": {
-        "a": "[0 1 1 0 1 1 1]",
-        "b": "[0 1 0 0 1 1 1]",
-        "c": "[0 1 1 1 1 1 0]",
-        "d": "[0 1 1 0 1 1 0]"
-      },
-      "correctAnswer": "d",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "What is the codeword of $\\mathbf{(7,6)}$ SPC code for the message $\\mathbf{\\begin{bmatrix} 0 & 1 & 1 & 0 & 1 & 1\\end{bmatrix}}$?",
+        "answers": {
+          "a": "$\\begin{bmatrix} 0 & 1 & 1 & 0 & 1 & 1& 1\\end{bmatrix}$",
+          "b": "$\\begin{bmatrix} 0 & 1 & 0 & 0 & 1 & 1& 1\\end{bmatrix}$",
+          "c": "$\\begin{bmatrix} 0 & 1 & 1 & 1 & 1 & 1& 0\\end{bmatrix}$",
+          "d": "$\\begin{bmatrix} 0 & 1 & 1 & 0 & 1 & 1& 0\\end{bmatrix}$"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
+      }
+    ]
+  }
