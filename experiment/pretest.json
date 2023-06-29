@@ -43,7 +43,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "5.  What is the dimension of the vector space given below? $\\begin{align*} U = \\left\\{ \\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\\\ 0\\\\ 0\\end{bmatrix}, \\begin{bmatrix} 0 \\\\ 1 \\\\ 1 \\\\0\\\\ 1\\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\\\ 0\\\\ 0\\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 1\\end{bmatrix} \\right\\}. \\end{align*}$",
+        "question": "5.  What is the dimension of the vector space given below? $$\\begin{align*} U = \\left\\{ \\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\\\ 0\\\\ 0\\end{bmatrix}, \\begin{bmatrix} 0 \\\\ 1 \\\\ 1 \\\\0\\\\ 1\\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\\\ 0\\\\ 0\\end{bmatrix}, \\begin{bmatrix} 1 \\\\ 1 \\\\ 0 \\\\ 0 \\\\ 1\\end{bmatrix} \\right\\}. \\end{align*}$$",
         "answers": {
           "a": "1",
           "b": "2",
