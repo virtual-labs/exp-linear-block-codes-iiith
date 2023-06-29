@@ -13,7 +13,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "2. Consider a vector  $\\mathbf{v} = \\begin{bmatrix} 1 & 1 & 0 & 0 \\end{bmatrix}$ and a matrix $M = \\begin{bmatrix} 0 & 0 & 1 & 0 & 1  \\\ 1 & 1 & 0 & 0 & 1  \\\ 1 & 0 & 0 & 1 & 0  \\\ 0 & 0 & 1 & 1 & 0  \\\ \\end{bmatrix}$ defined over $\\mathbb{F}_2$. What will be  $\\mathbf{v} \\cdot M$?",
+        "question": "2. Consider a vector  $\\mathbf{v} = \\begin{bmatrix} 1 & 1 & 0 & 0 \\end{bmatrix}$ and a matrix $M = \\begin{bmatrix} 0 & 0 & 1 & 0 & 1  \\\\ 1 & 1 & 0 & 0 & 1  \\\\ 1 & 0 & 0 & 1 & 0  \\\\ 0 & 0 & 1 & 1 & 0  \\\\ \\end{bmatrix}$ defined over $\\mathbb{F}_2$. What will be  $\\mathbf{v} \\cdot M$?",
         "answers": {
           "a": "$\\begin{bmatrix} 0 & 2 & 2 & 0 & 1 \\end{bmatrix}$",
           "b": "$\\begin{bmatrix} 1 & 1 & 1 & 0 & 0 \\end{bmatrix}$",
