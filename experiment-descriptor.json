@@ -55,15 +55,7 @@
       "label": "References",
       "unit-type": "task",
       "content-type": "text"
-    },
-    {
-      "target": "contributors.html",
-      "source": "contributors.md",
-      "label": "Contributors",
-      "unit-type": "task",
-      "content-type": "text"
     }
-    
     
   ]
 }
