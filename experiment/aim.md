@@ -1,5 +1,3 @@
-# Aim 
-
 The aim of this experiment is to introduce students with the basics of
 linear block codes. The experiment would begin with an introduction to
 finite fields, binary arithmetic, and vector spaces, which will be
@@ -14,19 +12,18 @@ The structure of the experiment is as follows:
 
 (1) Preliminaries
 
- -   Linear independence
+- Linear independence
 
- -   Vector space
+- Vector space
 
 (2) Linear block codes
 
- -   Block codes
+- Block codes
 
- -   Encoding- REP codes
+- Encoding- REP codes
 
- -   Encoding- SPC codes
+- Encoding- SPC codes
 
- -   Majority logic decoding for REP codes
+- Majority logic decoding for REP codes
 
- -   Error detection for SPC codes
-
+- Error detection for SPC codes
