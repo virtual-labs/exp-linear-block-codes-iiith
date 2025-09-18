@@ -1,8 +1,8 @@
 The theory associated with Experiment-1 is divided into two parts:
+<br>
 
-(1) Preliminaries
-
-(2) Linear block codes
+1. Preliminaries
+2. Linear block codes
 
 ### 1. Preliminaries
 
@@ -390,8 +390,8 @@ For example for $(3,2)$ SPC code,
 the messages and the corresponding codewords are given below:
 
 <p align="center">
-  <img src="./images/fig3.png" alt="Messages and codewords for (3,2) SPC code"><br>
-  <em>Table 1: Messages and codewords for the $(3,2)$ single parity check (SPC) code.</em>
+  <em>Table 1: Messages and codewords for the $(3,2)$ single parity check (SPC) code.</em><br> 
+  <img src="./images/fig3.png" alt="Messages and codewords for (3,2) SPC code"> 
 </p>
 
 Let us now illustrate how SPC codes can be used for detection of some of the error patterns.

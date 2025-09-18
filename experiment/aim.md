@@ -10,20 +10,15 @@ two simple yet important examples of linear block codes; repetition
 
 The structure of the experiment is as follows:
 
-(1) Preliminaries
+1. Preliminaries
 
-- Linear independence
+   - Linear independence
+   - Vector space
 
-- Vector space
+2. Linear block codes
 
-(2) Linear block codes
-
-- Block codes
-
-- Encoding- REP codes
-
-- Encoding- SPC codes
-
-- Majority logic decoding for REP codes
-
-- Error detection for SPC codes
+   - Block codes
+   - Encoding- REP codes
+   - Encoding- SPC codes
+   - Majority logic decoding for REP codes
+   - Error detection for SPC codes
