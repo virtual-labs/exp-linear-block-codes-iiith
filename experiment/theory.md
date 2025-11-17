@@ -189,6 +189,39 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
   \end{align*}
   $$
 
+**Example 1.1:** Let us compute $\begin{bmatrix}1 & 0 & 1 & 1\end{bmatrix} + \begin{bmatrix}1 & 1 & 0 & 1\end{bmatrix}$ over $\mathbb{F}_2$.
+
+$$
+\begin{align*}
+\begin{bmatrix}1 & 0 & 1 & 1\end{bmatrix} + \begin{bmatrix}1 & 1 & 0 & 1\end{bmatrix} &= \begin{bmatrix}1+1 & 0+1 & 1+0 & 1+1\end{bmatrix}\\
+&= \begin{bmatrix}0 & 1 & 1 & 0\end{bmatrix}.
+\end{align*}
+$$
+
+Note that each component is added modulo 2.
+
+**Example 1.2:** Let us compute the product
+$\begin{bmatrix}1 & 0 & 1\end{bmatrix} \cdot \begin{bmatrix}
+1 & 1 & 0 & 1 \\
+0 & 1 & 1 & 0 \\
+1 & 0 & 1 & 1
+\end{bmatrix}$ over $\mathbb{F}_2$.
+
+$$
+\begin{align*}
+\begin{bmatrix}1 & 0 & 1\end{bmatrix} \cdot \begin{bmatrix}
+1 & 1 & 0 & 1 \\
+0 & 1 & 1 & 0 \\
+1 & 0 & 1 & 1
+\end{bmatrix} &= \begin{bmatrix}
+(1 \cdot 1 + 0 \cdot 0 + 1 \cdot 1) & (1 \cdot 1 + 0 \cdot 1 + 1 \cdot 0) & (1 \cdot 0 + 0 \cdot 1 + 1 \cdot 1) & (1 \cdot 1 + 0 \cdot 0 + 1 \cdot 1)
+\end{bmatrix}\\
+&= \begin{bmatrix}
+0 & 1 & 1 & 0
+\end{bmatrix}.
+\end{align*}
+$$
+
 ### 1.2 Vector space spanned by the given set of vectors
 
 In this section, we shall provide preliminaries about vector space spanned the given set of finite number of vectors, subspace of a vector space, linearly independent vectors, basis of a vector space, dimension of a vector space. Towards defining the vector space spanned by the given set of vectors, we first define linear combination of the given set of vectors and scalars.
@@ -282,6 +315,26 @@ if and only if $a_1\mathbf{v}_1 + a_2\mathbf{v}_2+ \ldots + a_m\mathbf{v}_m = \m
 For example, it can be verified that the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 0 & 1 \end{bmatrix}$ and $\mathbf{v}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix}$ are linearly independent since $a_1\mathbf{v}_1 + a_2\mathbf{v}_2+ a_3\mathbf{v}_3$ gives an all-zero vector only when we choose $a_1=a_2=a_3=0$.
 Whereas the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 0 & 1 \end{bmatrix}$ and $\mathbf{v}_3 = \begin{bmatrix} 1 & 0 & 0 \end{bmatrix}$ are linearly dependent since $\mathbf{v}_1 + \mathbf{v}_2+ \mathbf{v}_3 = \mathbf{0}$.
 
+**Example 1.3** (Testing linear independence): Let us determine whether the vectors $\mathbf{v}_1 = \begin{bmatrix}1 & 1 & 0\end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix}1 & 0 & 1\end{bmatrix}$, and $\mathbf{v}_3 = \begin{bmatrix}0 & 1 & 1\end{bmatrix}$ are linearly independent over $\mathbb{F}_2$.
+
+We need to check if $a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + a_3\mathbf{v}_3 = \mathbf{0}$ implies $a_1 = a_2 = a_3 = 0$.
+
+Suppose $a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + a_3\mathbf{v}_3 = \mathbf{0}$. This gives:
+
+$$
+\begin{align*}
+a_1\begin{bmatrix}1 \\ 1 \\ 0\end{bmatrix} + a_2\begin{bmatrix}1 \\ 0 \\ 1\end{bmatrix} + a_3\begin{bmatrix}0 \\ 1 \\ 1\end{bmatrix} = \begin{bmatrix}0 \\ 0 \\ 0\end{bmatrix}
+\end{align*}
+$$
+
+This gives us the system:
+
+- $a_1 + a_2 = 0$
+- $a_1 + a_3 = 0$
+- $a_2 + a_3 = 0$
+
+From the first equation, $a_2 = a_1$. From the second equation, $a_3 = a_1$. Substituting into the third equation: $a_1 + a_1 = 0$, which gives $0 = 0$ (always true). However, we can verify that $a_1 = a_2 = a_3 = 1$ also satisfies all three equations. Therefore, there exists a non-trivial solution, and the vectors are **linearly dependent**.
+
 Finally, we shall define _basis_ of a vector space and dimension of a vector space.
 
 **Definition 7** _(Basis of a vector space): A basis for a vector space $V$ is a set of vectors having two properties at once:_
@@ -298,6 +351,17 @@ Note that a basis is not unique. The given vector space can have more that one b
 **Definition 8** _(Dimension of a vector space): The dimension of a space is the number of vectors in every basis._
 
 For example, the dimension of the vector space $\mathbb{F}_2^3$ is equal to $3$ since the set of vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ given in Example-3 is a basis for $\mathbb{F}_2^3$. Dimension of the vector space $W$ defined in Example-4 is equal to $2$ since $\{\mathbf{v}_1, \mathbf{v}_2\}$ is a basis of the vector space $W$.
+
+**Example 1.4** (Computing vector space span): Let us compute the vector space spanned by $\mathbf{v}_1 = \begin{bmatrix}1 & 0\end{bmatrix}$ and $\mathbf{v}_2 = \begin{bmatrix}1 & 1\end{bmatrix}$ over $\mathbb{F}_2$.
+
+The span consists of all linear combinations $a_1\mathbf{v}_1 + a_2\mathbf{v}_2$ where $a_1, a_2 \in \mathbb{F}_2$:
+
+- When $a_1 = 0, a_2 = 0$: $\mathbf{v} = \begin{bmatrix}0 & 0\end{bmatrix}$
+- When $a_1 = 1, a_2 = 0$: $\mathbf{v} = \begin{bmatrix}1 & 0\end{bmatrix}$
+- When $a_1 = 0, a_2 = 1$: $\mathbf{v} = \begin{bmatrix}1 & 1\end{bmatrix}$
+- When $a_1 = 1, a_2 = 1$: $\mathbf{v} = \begin{bmatrix}1 & 0\end{bmatrix} + \begin{bmatrix}1 & 1\end{bmatrix} = \begin{bmatrix}0 & 1\end{bmatrix}$
+
+Therefore, ${span}\{\mathbf{v}_1, \mathbf{v}_2\} = \left\{\begin{bmatrix}0 & 0\end{bmatrix}, \begin{bmatrix}1 & 0\end{bmatrix}, \begin{bmatrix}0 & 1\end{bmatrix}, \begin{bmatrix}1 & 1\end{bmatrix}\right\} = \mathbb{F}_2^2$.
 
 ### 2. Linear block codes
 
@@ -357,6 +421,18 @@ $$
 
 For the linear blocks it can be proved that, the minimum distance is equal the minimum Hamming weight of a non-zero codeword. A linear block code of length $n$, dimension $k$, and minimum distance $d_{min}$ is denoted by $\mathcal{C}(n,k, d_{min})$.
 
+**Example 2.1** (Computing Hamming distance and weight):
+
+a) Compute the Hamming weight of $\mathbf{v} = \begin{bmatrix}1 & 0 & 1 & 1 & 0 & 1\end{bmatrix}$.
+
+The Hamming weight is the number of 1's: $w_H(\mathbf{v}) = 4$.
+
+b) Compute the Hamming distance between $\mathbf{v}_1 = \begin{bmatrix}1 & 0 & 1 & 1 & 0\end{bmatrix}$ and $\mathbf{v}_2 = \begin{bmatrix}1 & 1 & 0 & 1 & 0\end{bmatrix}$.
+
+The vectors differ at positions 2 and 3, so $d_H(\mathbf{v}_1, \mathbf{v}_2) = 2$.
+
+Alternatively, we can compute: $d_H(\mathbf{v}_1, \mathbf{v}_2) = w_H(\mathbf{v}_1 + \mathbf{v}_2) = w_H(\begin{bmatrix}0 & 1 & 1 & 0 & 0\end{bmatrix}) = 2$.
+
 We shall next discuss two families of linear block codes; repetition and single parity check codes.
 
 ### 2.2 Repetition codes
@@ -381,6 +457,28 @@ Suppose the codeword $\begin{bmatrix} 1 & 1 & 1\end{bmatrix}$ is transmitted and
 according to majority logic decoding, the decoded codeword will be $\begin{bmatrix} 1 & 1 & 1\end{bmatrix}$ and receiver is able to correct such errors.
 However, note that if more than two bits are flipped then the decoded codeword will be incorrect and receiver is not able to correct such error patterns.
 In the Experiment-3 we shall see that REP-$n$ code is able to correct all possible error patterns of weight less than or equal to $\lfloor \frac{n-1}{2}\rfloor$.
+
+**Example 2.2** (REP-5 encoding and decoding):
+
+a) **Encoding:** Encode the message bit stream $1 \hspace{0.1cm} 0 \hspace{0.1cm} 1$ using REP-5 code.
+
+Each bit is repeated 5 times:
+
+- Message $1$ → Codeword $\begin{bmatrix}1 & 1 & 1 & 1 & 1\end{bmatrix}$
+- Message $0$ → Codeword $\begin{bmatrix}0 & 0 & 0 & 0 & 0\end{bmatrix}$
+- Message $1$ → Codeword $\begin{bmatrix}1 & 1 & 1 & 1 & 1\end{bmatrix}$
+
+Encoded bit stream: $1 \hspace{0.05cm} 1 \hspace{0.05cm} 1 \hspace{0.05cm} 1 \hspace{0.05cm} 1 \hspace{0.05cm} 0 \hspace{0.05cm} 0 \hspace{0.05cm} 0 \hspace{0.05cm} 0 \hspace{0.05cm} 0 \hspace{0.05cm} 1 \hspace{0.05cm} 1 \hspace{0.05cm} 1 \hspace{0.05cm} 1 \hspace{0.05cm} 1$
+
+b) **Decoding:** Suppose the received vector is $\mathbf{y} = \begin{bmatrix}1 & 0 & 1 & 1 & 1\end{bmatrix}$.
+
+Number of 1's = 4, Number of 0's = 1. Since 1's are in majority, the decoded message is $1$.
+
+If at most one bit was flipped during transmission (original codeword was $\begin{bmatrix}1 & 1 & 1 & 1 & 1\end{bmatrix}$), the decoder correctly recovers the message.
+
+c) **Error correction capability:** Can REP-5 correct 2 errors?
+
+No. If the transmitted codeword is $\begin{bmatrix}1 & 1 & 1 & 1 & 1\end{bmatrix}$ and 2 bits are flipped to give $\mathbf{y} = \begin{bmatrix}0 & 0 & 1 & 1 & 1\end{bmatrix}$, the decoder will output $1$ (3 ones vs 2 zeros). However, if 3 bits are flipped to give $\mathbf{y} = \begin{bmatrix}0 & 0 & 0 & 1 & 1\end{bmatrix}$, the decoder will output $0$, which is incorrect. REP-5 can correct up to $\lfloor \frac{5-1}{2} \rfloor = 2$ errors.
 
 ### 2.3 Single parity check codes
 
@@ -408,3 +506,25 @@ Suppose the codeword $\mathbf{v} = \begin{bmatrix}v_1 & v_2 & \ldots & v_n \end{
 Eq. (5). This will indicate that that an error has occurred. Note that this will not help to identity the location of the error. Eq. (5) will just help us to _detect_ whether one-bit is flipped or not.
 
 Note that Eq. (5) will not be useful if two bits are flipped, since the received vector will satisfy Eq. (5) when exactly two bits are flipped.
+
+**Example 2.3** (SPC encoding and error detection):
+
+a) **Encoding:** Encode the messages $\begin{bmatrix}1 & 0 & 1\end{bmatrix}$ and $\begin{bmatrix}1 & 1 & 0\end{bmatrix}$ using $(4,3)$ SPC code.
+
+For message $\mathbf{m}_1 = \begin{bmatrix}1 & 0 & 1\end{bmatrix}$:
+
+- Parity bit: $p = 1 + 0 + 1 = 0 \pmod{2}$
+- Codeword: $\mathbf{v}_1 = \begin{bmatrix}1 & 0 & 1 & 0\end{bmatrix}$
+
+For message $\mathbf{m}_2 = \begin{bmatrix}1 & 1 & 0\end{bmatrix}$:
+
+- Parity bit: $p = 1 + 1 + 0 = 0 \pmod{2}$
+- Codeword: $\mathbf{v}_2 = \begin{bmatrix}1 & 1 & 0 & 0\end{bmatrix}$
+
+b) **Error detection:** Suppose the received vectors are $\mathbf{y}_1 = \begin{bmatrix}1 & 1 & 1 & 0\end{bmatrix}$ and $\mathbf{y}_2 = \begin{bmatrix}1 & 1 & 0 & 0\end{bmatrix}$.
+
+For $\mathbf{y}_1$: Check parity sum: $1 + 1 + 1 + 0 = 1 \neq 0 \pmod{2}$. **Error detected!**
+
+For $\mathbf{y}_2$: Check parity sum: $1 + 1 + 0 + 0 = 0 \pmod{2}$. **No error detected** (either no errors occurred, or an even number of errors occurred).
+
+c) **Limitation:** If the transmitted codeword $\mathbf{v}_1 = \begin{bmatrix}1 & 0 & 1 & 0\end{bmatrix}$ is corrupted to $\mathbf{y} = \begin{bmatrix}0 & 1 & 1 & 0\end{bmatrix}$ (2 bits flipped), the parity sum is $0 + 1 + 1 + 0 = 0 \pmod{2}$, so no error is detected. SPC codes can detect odd numbers of errors but not even numbers.
