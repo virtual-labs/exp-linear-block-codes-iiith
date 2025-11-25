@@ -200,12 +200,7 @@ $$
 
 Note that each component is added modulo 2.
 
-**Example 1.2:** Let us compute the product
-$\begin{bmatrix}1 & 0 & 1\end{bmatrix} \cdot \begin{bmatrix}
-1 & 1 & 0 & 1 \\
-0 & 1 & 1 & 0 \\
-1 & 0 & 1 & 1
-\end{bmatrix}$ over $\mathbb{F}_2$.
+**Example 1.2:** Let us compute the product over $\mathbb{F}_2$:
 
 $$
 \begin{align*}
@@ -252,61 +247,32 @@ $$
 
 This vector space $V$ is also called as the span of the vectors $\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m$, denoted by $V = {span} \{\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m\}$.
 
-Note that a vector space is essentially the set of all possible linear combinations of the given set of vectors. Let us consider some examples for vector spaces.
+Note that a vector space is essentially the set of all possible linear combinations of the given set of vectors. Let us consider an example for a vector space.
 
-- Example-1: It can be verified that $\mathbb{F}_2^4$ is a vector space spanned by the following set of vectors
-  $$
-  \begin{align*}
-  \mathbf{F}_2^4 =
-  \hspace{0.05in}{span} \{\mathbf{e}_1 , \mathbf{e}_2, \mathbf{e}_3, \mathbf{e}_4\}
-  = \hspace{0.05in}{span}
-  \left\{
-  \begin{bmatrix} 1 \\ 0 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 0 \\ 0 \end{bmatrix},
-  \begin{bmatrix} 0 \\ 0 \\ 1 \\ 0\end{bmatrix},
-  \begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \end{bmatrix}
-  \right\}  \hspace{1.4cm} (2)
-  \end{align*}
-  $$
-- Example-2: For any integer $n$, it can be verified that $\mathbb{F}_2^n$ is a vector space.
+**Example:** The vector space spanned by the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 0 & 1 \end{bmatrix}$ and $\mathbf{v}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix}$ is given by
 
-- Example-3: The vector space spanned by the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 0 & 0 & 1 \end{bmatrix}$ and $\mathbf{v}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix}$ is given by
+$$
+\begin{align*}
+V = \hspace{0.05in}{span} \{\mathbf{v}_1 , \mathbf{v}_2, \mathbf{v}_3\} =
+\left\{
+\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix},
+\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix},
+\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix},
+\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix},
+\begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix},
+\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix},
+\begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}
+\right\}
+\end{align*}
+$$
 
-  $$
-  \begin{align*}
-  V = \hspace{0.05in}{span} \{\mathbf{v}_1 , \mathbf{v}_2, \mathbf{v}_3\} =
-  \left\{
-  \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix},
-  \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix},
-  \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix},
-  \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix},
-  \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix},
-  \begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix},
-  \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}
-  \right\}  \hspace{0.3cm} (3)
-  \end{align*}
-  $$
-
-  Note that $V = \mathbf{F}_2^3$ since it consists of all possible vectors in $\mathbf{F}_2^3$.
-
-- Example-4: Consider the vector space spanned by  
-  the vectors $\mathbf{v}_1$ and $\mathbf{v}_2$ defined in Example-3. It is given by
-  $$
-  \begin{align*}
-  W\hspace{0.3cm} = \hspace{0.3cm}{span}\{\mathbf{v}_1, \mathbf{v}_2\}
-  = \left\{
-  \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix},
-  \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix},
-  \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix},
-  \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
-  \right\} \hspace{3cm} (4)
-  \end{align*}
-  $$
+Note that $V = \mathbf{F}_2^3$ since it consists of all possible vectors in $\mathbf{F}_2^3$.
 
 We shall next define a subspace of a vector space.
 
 **Definition 5** _(Subspace): A subspace of a vector space is a nonempty subset that satisfies the requirements for a vector space._
 
-For the examples (Example-3 and 4) mentioned above, $W=\hspace{0.001in}{span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is a subspace of $V=\hspace{0.001in}{span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$.
+For Example mentioned above, any subset of $V=\hspace{0.001in}{span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ that forms a vector space is a subspace of $V$.
 
 **Definition 6** _(Linear independence): A given set of vectors
 $\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m \in \mathbb{F}_2^n$ are said to be independent
@@ -346,11 +312,11 @@ For example consider the vector space $V = \mathbb{F}_2^3$. For this vector spac
 $\mathbf{w}_1 = \begin{bmatrix} 1 & 0 & 0 \end{bmatrix}$, $\mathbf{w}_2 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}$, $\mathbf{w}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix}$, $\mathbf{w}_4 = \begin{bmatrix} 1 & 1 & 1 \end{bmatrix}$
 is not a basis for the vector space $\mathbb{F}_2^3$ since they are not linearly independent. Further, the set of vectors $\{\mathbf{w}_1, \mathbf{w}_2\}$ is not a basis for $\mathbb{F}_2^3$ since span $\{\mathbf{w}_1, \mathbf{w}_2\} \ne \mathbb{F}_2^3$.
 
-Note that a basis is not unique. The given vector space can have more that one basis. Can you find one more basis for the vector space $\mathbb{F}_2^3$ (Hint: See Eq (2))? Note that the number of vectors in any two bases will remain the same. This leads to the dimension of a vector space.
+Note that a basis is not unique. The given vector space can have more than one basis. Can you find one more basis for the vector space $\mathbb{F}_2^3$? Note that the number of vectors in any two bases will remain the same. This leads to the dimension of a vector space.
 
 **Definition 8** _(Dimension of a vector space): The dimension of a space is the number of vectors in every basis._
 
-For example, the dimension of the vector space $\mathbb{F}_2^3$ is equal to $3$ since the set of vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ given in Example-3 is a basis for $\mathbb{F}_2^3$. Dimension of the vector space $W$ defined in Example-4 is equal to $2$ since $\{\mathbf{v}_1, \mathbf{v}_2\}$ is a basis of the vector space $W$.
+For example, the dimension of the vector space $\mathbb{F}_2^3$ is equal to $3$ since the set of vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ given in the example above is a basis for $\mathbb{F}_2^3$.
 
 **Example 1.4** (Computing vector space span): Let us compute the vector space spanned by $\mathbf{v}_1 = \begin{bmatrix}1 & 0\end{bmatrix}$ and $\mathbf{v}_2 = \begin{bmatrix}1 & 1\end{bmatrix}$ over $\mathbb{F}_2$.
 
