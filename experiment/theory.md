@@ -88,7 +88,7 @@ defined over the binary field $\mathbb{F}_2$. Vectors are denoted by
 boldface letters and the components of a vector are denoted by lower
 case letters, e.g. the components of a vector
 $\mathbf{v} \in \mathbb{F}_2^n$ are denoted by
-$\mathbf{v} = \begin{pmatrix}v_1 & v_2 & \ldots & v_n \end{pmatrix}$, where
+$\mathbf{v} = \begin{bmatrix}v_1 & v_2 & \ldots & v_n \end{bmatrix}$, where
 each $v_i \in \mathbb{F}_2$ for $i = 1, 2, \ldots, n$. Vectors can
 either be considered as row vectors or columns vectors, depending on the
 context. Matrices are denoted by upper-case letters, e.g. consider a
@@ -107,27 +107,18 @@ and matrices that are defined over $\mathbb{F}_2$:
   $$
   \begin{aligned}
   \mathbf{v} + \mathbf{w} =
-
   \begin{bmatrix}
-
-  v_1 \\ v_2 \\ \vdots  \\ v_n
-
+  v_1 & v_2 & \ldots & v_n
   \end{bmatrix}
-
   +
   \begin{bmatrix}
-
-  w_1 \\ w_2 \\ \vdots  \\ w_n
-
+  w_1 & w_2 & \ldots & w_n
   \end{bmatrix}
-
   =
-
   \begin{bmatrix}
-
-  v_1 + w_1 \\ v_2 +w_2 \\ \vdots  \\ v_n+w_n
-
-  \end{bmatrix}.\end{aligned}
+  v_1 + w_1 & v_2 + w_2 & \ldots & v_n + w_n
+  \end{bmatrix}.
+  \end{aligned}
   $$
 
 For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1\end{bmatrix} = \begin{bmatrix} 1 & 0 & 0\end{bmatrix}$.
@@ -140,11 +131,11 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
   a \cdot \mathbf{v} =
   a \cdot
   \begin{bmatrix}
-  v_1 \\ v_2  \\ \vdots  \\ v_n
+  v_1 & v_2 & \ldots & v_n
   \end{bmatrix}
   =
   \begin{bmatrix}
-  a \cdot v_1 \\ a \cdot v_2 \\ \vdots  \\ a \cdot v_n
+  a \cdot v_1 & a \cdot v_2 & \ldots & a \cdot v_n
   \end{bmatrix},
   \end{align*}
   $$
@@ -156,18 +147,18 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
   $$
   \begin{align*}
   \mathbf{v} \cdot M &=
-  \begin{bmatrix}v_1 & v_2& \ldots& v_n\end{bmatrix}
+  \begin{bmatrix}v_1 & v_2 & \ldots & v_n\end{bmatrix}
   \cdot \begin{bmatrix}
-  M_{11} & M_{12} & \ldots& M_{1m} \\
-  M_{21} & M_{22} & \ldots& M_{2m} \\
+  M_{11} & M_{12} & \ldots & M_{1m} \\
+  M_{21} & M_{22} & \ldots & M_{2m} \\
   \vdots \\
-  M_{n1} & M_{n2} & \ldots& M_{nm}
+  M_{n1} & M_{n2} & \ldots & M_{nm}
   \end{bmatrix} \\
   &= \begin{bmatrix}
-  v_1 \cdot M_{11} + v_2 \cdot M_{12} + \ldots + v_n \cdot M_{1m} \\
-  v_1 \cdot M_{21} + v_2 \cdot M_{22} + \ldots + v_n \cdot M_{2m} \\
-  \vdots \\
-  v_1 \cdot M_{n1} + v_2 \cdot M_{n2} + \ldots +  v_n \cdot M_{nm}
+  v_1 \cdot M_{11} + v_2 \cdot M_{21} + \ldots + v_n \cdot M_{n1} &
+  v_1 \cdot M_{12} + v_2 \cdot M_{22} + \ldots + v_n \cdot M_{n2} &
+  \ldots &
+  v_1 \cdot M_{1m} + v_2 \cdot M_{2m} + \ldots + v_n \cdot M_{nm}
   \end{bmatrix},
   \end{align*}
   $$
@@ -176,13 +167,12 @@ For example, $\begin{bmatrix} 1 & 0 & 1\end{bmatrix} + \begin{bmatrix} 0 & 0 & 1
 
   $$
   \begin{align*}
-  \begin{bmatrix}1 & 0& 1\end{bmatrix}
+  \begin{bmatrix}1 & 0 & 1\end{bmatrix}
   \cdot \begin{bmatrix}
-  0 & 0 & 1& 1 \\
-  0 & 1 & 1& 0 \\
-  1 & 0 & 1& 1
+  0 & 0 & 1 & 1 \\
+  0 & 1 & 1 & 0 \\
+  1 & 0 & 1 & 1
   \end{bmatrix}
-
   &= \begin{bmatrix}
   1 & 0 & 0 & 0
   \end{bmatrix}.
@@ -209,9 +199,6 @@ $$
 0 & 1 & 1 & 0 \\
 1 & 0 & 1 & 1
 \end{bmatrix} &= \begin{bmatrix}
-(1 \cdot 1 + 0 \cdot 0 + 1 \cdot 1) & (1 \cdot 1 + 0 \cdot 1 + 1 \cdot 0) & (1 \cdot 0 + 0 \cdot 1 + 1 \cdot 1) & (1 \cdot 1 + 0 \cdot 0 + 1 \cdot 1)
-\end{bmatrix}\\
-&= \begin{bmatrix}
 0 & 1 & 1 & 0
 \end{bmatrix}.
 \end{align*}
@@ -255,13 +242,13 @@ $$
 \begin{align*}
 V = \hspace{0.05in}{span} \{\mathbf{v}_1 , \mathbf{v}_2, \mathbf{v}_3\} =
 \left\{
-\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix},
-\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix},
-\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix},
-\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix},
-\begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix},
-\begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix},
-\begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}
+\begin{bmatrix} 0 & 0 & 0 \end{bmatrix}, \begin{bmatrix} 1 & 0 & 0 \end{bmatrix},
+\begin{bmatrix} 0 & 1 & 0 \end{bmatrix},
+\begin{bmatrix} 0 & 0 & 1 \end{bmatrix},
+\begin{bmatrix} 1 & 0 & 1 \end{bmatrix},
+\begin{bmatrix} 1 & 1 & 0 \end{bmatrix},
+\begin{bmatrix} 0 & 1 & 1 \end{bmatrix},
+\begin{bmatrix} 1 & 1 & 1 \end{bmatrix}
 \right\}
 \end{align*}
 $$
@@ -289,7 +276,7 @@ Suppose $a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + a_3\mathbf{v}_3 = \mathbf{0}$. This
 
 $$
 \begin{align*}
-a_1\begin{bmatrix}1 \\ 1 \\ 0\end{bmatrix} + a_2\begin{bmatrix}1 \\ 0 \\ 1\end{bmatrix} + a_3\begin{bmatrix}0 \\ 1 \\ 1\end{bmatrix} = \begin{bmatrix}0 \\ 0 \\ 0\end{bmatrix}
+a_1\begin{bmatrix}1 & 1 & 0\end{bmatrix} + a_2\begin{bmatrix}1 & 0 & 1\end{bmatrix} + a_3\begin{bmatrix}0 & 1 & 1\end{bmatrix} = \begin{bmatrix}0 & 0 & 0\end{bmatrix}
 \end{align*}
 $$
 
@@ -308,7 +295,7 @@ Finally, we shall define _basis_ of a vector space and dimension of a vector spa
 - The vectors are linearly independent
 - They span the space $V$
 
-For example consider the vector space $V = \mathbb{F}_2^3$. For this vector space, the set of vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ given in Example-3 is a basis. However the set of vectors
+For example consider the vector space $V = \mathbb{F}_2^3$. For this vector space, the set of vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ given in the example above is a basis. However the set of vectors
 $\mathbf{w}_1 = \begin{bmatrix} 1 & 0 & 0 \end{bmatrix}$, $\mathbf{w}_2 = \begin{bmatrix} 1 & 0 & 1 \end{bmatrix}$, $\mathbf{w}_3 = \begin{bmatrix} 0 & 1 & 0 \end{bmatrix}$, $\mathbf{w}_4 = \begin{bmatrix} 1 & 1 & 1 \end{bmatrix}$
 is not a basis for the vector space $\mathbb{F}_2^3$ since they are not linearly independent. Further, the set of vectors $\{\mathbf{w}_1, \mathbf{w}_2\}$ is not a basis for $\mathbb{F}_2^3$ since span $\{\mathbf{w}_1, \mathbf{w}_2\} \ne \mathbb{F}_2^3$.
 
@@ -376,7 +363,7 @@ We shall next define the Hamming weight of a vector $\mathbf{v} \in \mathbf{F}_2
 
 For example, the Hamming weight of the vector $\mathbf{v} = \begin{bmatrix} 1 & 0 & 0 & 1 & 1 \end{bmatrix} \in \mathbb{F}_2^5$ is equal to $3$. For the vectors $\mathbf{v}_1 = \begin{bmatrix} 1 & 0 & 0 & 1 & 1 \end{bmatrix} \hspace{0.1cm}{and}\hspace{0.1cm} \mathbf{v}_2 = \begin{bmatrix} 1 & 0 & 0 & 0 & 0 \end{bmatrix}$, the Hamming distance $d_H(\mathbf{v}_1, \mathbf{v}_2) = 2$. We shall next define the minimum distance of a block code.
 
-**Definition 13** _(Minimum distance $d_{min}$ of a block code $\mathcal{C}(n,M)$): The minimum distance $d_{min}$ of the given block code is defined as the minimum Hamming distance between any two codewords of the code, i.e.\_,
+**Definition 13** _(Minimum distance $d_{min}$ of a block code $\mathcal{C}(n,M)$): The minimum distance $d_{min}$ of the given block code is defined as the minimum Hamming distance between any two codewords of the code, i.e.,
 
 $$
 \begin{align*}
