@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" href="./css/linear-dependence.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	<title>
+		Linear Indepedence
+	</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-one-quarter v-instruction-title">
+				Tasks
+			</div>
+			<div class="column">
+				<div class="v-tabs">
+					<ul>
+						<li class="is-active" id="Task1">
+							<a>
+								Linear Independence
+							</a>
+						</li>
+
+						<li id="Task2" onclick="window.location.href = 'span.html';">
+							<a>
+								Vector Space
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- <h1 style="text-align: center;">Encoding</h1> -->
+
+		<div class="columns is-centered">
+			<div class="column">
+				<div class="v-collapsible-instruction-container v-instruction-container">
+					<div class="v-collapsible is-size-5">Instructions</div>
+					<div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+						<ul style="list-style: disc;">
+
+							<b>Quick theory overview:</b>
+							<li>
+								The set of vectors \(\mathbf{v_1, v_2, . . ., v_m} \in \mathbb{F}_{2^n} \) are said to be linearly
+								dependent, if
+								there exists a set of \(n\) scalars \(a_1, a_2, . . ., a_m \in \mathbb{F}_{2^n}\), not all zero,
+								such that \( a_1 \mathbf{v_1} + a_2 \mathbf{v_2} + . . . + a_m\mathbf{v_m}= \mathbf{0}
+								\).
+							</li>
+
+							<li>
+								The set of vectors \( \mathbf{v_1, v_2, \dots, v_m} \) are said to be linearly
+								independent, if
+								and only if the equation \( a_1 \mathbf{v_1} + a_2 \mathbf{v_2} + \dots + a_m
+								\mathbf{v_m}=
+								\mathbf{0} \)
+								has \(a_1 = a_2 =\dots = a_m=0 \) as the only solution.
+							</li>
+						</ul>
+						<br>
+						<ul style="list-style: disc;">
+							<b>Procedure:</b>
+							<li>
+								Enter the values of \(a_1, a_2, \dots, a_m \in \{0, 1\}\) in the corresponding fields.
+							</li>
+
+							<li>
+								Choose one of the options from the drop-down and click on <b>Submit</b>.
+							</li>
+
+							<li>
+								The correctness of the entered answer is displayed in <b>Observations</b>.
+							</li>
+							
+							<li>
+								<b>Next</b> - Displays the next example.
+							</li>
+							
+							<li>
+								<b>Previous</b> - Displays the previous example.
+							</li>
+
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<section id="example1">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					For the vectors &nbsp; \(\mathbf{v_1}=\begin{bmatrix}
+					1\\
+					1\\
+					0\\
+					0
+					\end{bmatrix},
+
+					\mathbf{v_2}=\begin{bmatrix}
+					0\\
+					1\\
+					0\\
+					1
+					\end{bmatrix}\)
+
+					and &nbsp;
+
+					\(\mathbf{v_3}=\begin{bmatrix}
+					1\\
+					0\\
+					0\\
+					1
+					\end{bmatrix}\)
+
+					in &nbsp; \(\mathbb{F}_2 ^4\),
+
+					find the values of &nbsp; \(a_1, a_2, a_3\) &nbsp; for which &nbsp; \(a_1 \mathbf{v_1}+a_2
+					\mathbf{v_2}+ a_3
+					\mathbf{v_3}=
+					\mathbf{0}\)
+					&nbsp;
+					and determine whether the vectors are
+					linearly independent or not.
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					Enter values in the fields below.
+
+					<form action="" method="get" id="form1" onsubmit="return false">
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>1</sub> = </i>  &nbsp;</label>
+							<input type="number" id="a1" min="0" max="1">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>2</sub> = </i> &nbsp;</label>
+							<input type="number" id="a2" min="0" max="1">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>3</sub> = </i> &nbsp;</label>
+							<input type="number" id="a3" min="0" max="1">
+						</div>
+
+						<p>Choose one of the following
+
+							<label></label>
+							<select id="choose1">
+								<option value="select">--- Select ---</option>
+								<option value="Linearly Dependent">Linearly Dependent</option>
+								<option value="Linearly Independent">Linearly Independent</option>
+							</select>
+							<br>
+							<br>
+						</p>
+
+						<button class="v-button" role="button" onclick="verify1()" form="form1"> Submit
+						</button>
+						<button class="v-button" role="button" onclick="page2()"> Next </button>
+					</form>
+
+
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="example2" style="display: none">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					For the vectors &nbsp;
+					\(\mathbf{v_1}=\begin{bmatrix}
+					1\\
+					1\\
+					1\\
+					1
+					\end{bmatrix},
+
+					\mathbf{v_2}=\begin{bmatrix}
+					0\\
+					1\\
+					1\\
+					1
+					\end{bmatrix},
+
+					\mathbf{v_3}=\begin{bmatrix}
+					1\\
+					0\\
+					1\\
+					1
+					\end{bmatrix}\),
+
+
+					and &nbsp;
+
+					\(\mathbf{v_4}=\begin{bmatrix}
+					0\\
+					1\\
+					0\\
+					0
+					\end{bmatrix}\)
+					in &nbsp; \(\mathbb{F}_2 ^4\),
+
+					find the values of &nbsp; \(a_1, a_2, a_3, a_4\) &nbsp; for which &nbsp; \(a_1 \mathbf{v_1}+a_2
+					\mathbf{v_2}+ a_3 \mathbf{v_3}+ a_4 \mathbf{v_4}= \mathbf{0}\)
+					&nbsp;
+					and determine whether the vectors are
+					linearly independent or not.
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					Enter values in the fields below.
+
+					<form action="" method="get" id="form2" onsubmit="return false">
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>1</sub> =</i> &nbsp;</label>
+							<input type="number" id="b1" min="0" max="1">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>2</sub> =</i>  &nbsp;</label>
+							<input type="number" id="b2" min="0" max="1">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>3</sub> =</i>  &nbsp;</label>
+							<input type="number" id="b3" min="0" max="1">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>4</sub> =</i>  &nbsp;</label>
+							<input type="number" id="b4" min="0" max="1">
+						</div>
+
+						<p>Choose one of the following
+
+							<label></label>
+							<select id="choose2">
+								<option value="select">--- Select ---</option>
+								<option value="Linearly Dependent">Linearly Dependent</option>
+								<option value="Linearly Independent">Linearly Independent</option>
+							</select>
+							<br>
+							<br>
+						</p>
+
+						<button class="v-button" role="button" onclick="verify2()" form="form2"> Submit
+						</button>
+						<button class="v-button" role="button" onclick="page1()"> Previous </button>
+						<button class="v-button" role="button" onclick="page3()"> Next </button>
+					</form>
+
+
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations2">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="example3" style="display: none">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					For the vectors &nbsp;
+					\(\mathbf{v_1}=\begin{bmatrix}
+					1\\
+					0\\
+					1\\
+					0
+					\end{bmatrix},
+
+					\mathbf{v_2}=\begin{bmatrix}
+					0\\
+					0\\
+					0\\
+					1
+					\end{bmatrix},
+
+					\mathbf{v_3}=\begin{bmatrix}
+					1\\
+					1\\
+					1\\
+					0
+					\end{bmatrix}\),
+
+
+					and &nbsp;
+
+					\(\mathbf{v_4}=\begin{bmatrix}
+					0\\
+					0\\
+					1\\
+					1
+					\end{bmatrix}\)
+					in &nbsp; \(\mathbb{F}_2 ^4\),
+
+					find the values of &nbsp; \(a_1, a_2, a_3, a_4\) &nbsp; for which &nbsp; \(a_1 \mathbf{v_1}+a_2
+					\mathbf{v_2}+ a_3 \mathbf{v_3}+ a_4 \mathbf{v_4}= \mathbf{0}\)
+					&nbsp;
+					and determine whether the vectors are
+					linearly independent or not.
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					Enter values in the fields below.
+
+					<form action="" method="get" id="form3" onsubmit="return false">
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>1</sub> =</i> &nbsp; </label>
+							<input type="number" id="c1" min="0" max="1">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>2</sub> =</i> &nbsp;</label>
+							<input type="number" id="c2" min="0" max="1">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>3</sub> =</i> &nbsp;</label>
+							<input type="number" id="c3" min="0" max="1">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight:500; ">a<sub>4</sub> =</i> &nbsp;</label>
+							<input type="number" id="c4" min="0" max="1">
+						</div>
+
+						<p>Choose one of the following
+
+							<label></label>
+							<select id="choose3">
+								<option value="select">--- Select ---</option>
+								<option value="Linearly Dependent">Linearly Dependent</option>
+								<option value="Linearly Independent">Linearly Independent</option>
+							</select>
+							<br>
+							<br>
+						</p>
+
+
+						<button class="v-button" role="button" onclick="verify3()" form="form3"> Submit
+						</button>
+						<button class="v-button" role="button" onclick="page2()"> Previous </button>
+					</form>
+
+
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations3">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+	<script src="./js/linear-dependence.js"></script>
+</body>
+
+
+</html>

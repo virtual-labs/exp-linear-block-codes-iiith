@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" href="./css/span.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	<title>
+		Span
+	</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-one-quarter v-instruction-title">
+				Tasks
+			</div>
+			<div class="column">
+				<div class="v-tabs">
+					<ul>
+						<li id="Task1" onclick="window.location.href = 'linear-dependence.html';">
+							<a>
+								Linear Independence
+							</a>
+						</li>
+
+						<li class="is-active" id="Task2">
+							<a>
+								Vector Space
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="columns is-centered">
+			<div class="column">
+				<div class="v-collapsible-instruction-container v-instruction-container">
+					<div class="v-collapsible is-size-5">Instructions</div>
+					<div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+						<ul style="list-style: disc;">
+							<b>Quick theory overview:</b>
+							<br>
+
+							<li>The vector space \(V \) spanned by the vectors
+								\(\mathbf{v}_1 , \mathbf{v}_2, \ldots, \mathbf{v}_m \in \mathbb{F}_2^n \) is defined as
+								<br>
+								\( V \)=
+								\( \Big\{ \mathbf{v} \in \mathbb{F}_2^n \Big| \) \(\mathbf{v} = a_1\mathbf{v}_1 +
+								a_2\mathbf{v}_2+ \ldots + a_m\mathbf{v}_m\) \(\mbox{ for some scalars }\)
+								\(a_1, a_2, \ldots, a_m \in \mathbb{F}_2
+								\Big\}.
+								\)
+							</li>
+
+						</ul>
+						<br>
+						<ul style="list-style: disc;">
+							<b>Procedure:</b>
+
+							<li>
+								There are 16 vectors in the first box. To select a vector, click on it. It appears
+								in
+								the second box.
+							</li>
+
+							<li> To deselect a vector from the second box, click on it. It appears back in the first
+								box.
+							</li>
+
+							<li>
+								After selecting the required vectors, click on <b>Submit</b>.
+							</li>
+
+							<li>
+								The correctness of the entered answer is displayed in <b>Observations</b>.
+							</li>
+
+							<li>
+								<b>Reset</b> - Deselects all the vectors in the second box.
+							</li>
+
+							<li>
+								<b>Next</b> - Displays the next example.
+							</li>
+
+							<li>
+								<b>Previous</b> - Displays the previous example.
+							</li>
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<section id="page1">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<br>
+					<p> Find all the vectors in the vector space spanned by
+						\(\begin{bmatrix}
+						0\\
+						0\\
+						1\\
+						1
+						\end{bmatrix}
+						\)
+
+						and
+						\(\begin{bmatrix}
+						1\\
+						1\\
+						1\\
+						1
+						\end{bmatrix}
+						\).
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					<section id="top-bar-1">
+						<div class="scroll-box-1">
+							<div id="tile-container-1">
+
+								<div class="tile" id="a1" display="style:block" onClick="hide1('a1', 'a2')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="b1" display="style:block" onClick="hide1('b1', 'b2')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="c1" display="style:block" onClick="hide1('c1', 'c2')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+
+								<div class="tile" id="d1" display="style:block" onClick="hide1('d1', 'd2')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+
+								<div class="tile" id="e1" display="style:block" onClick="hide1('e1', 'e2')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="f1" display="style:block" onClick="hide1('f1', 'f2')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="g1" display="style:block" onClick="hide1('g1', 'g2')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="h1" display="style:block" onClick="hide1('h1', 'h2')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="i1" display="style:block" onClick="hide1('i1', 'i2')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="j1" display="style:block" onClick="hide1('j1', 'j2')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="k1" display="style:block" onClick="hide1('k1', 'k2')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="l1" display="style:block" onClick="hide1('l1', 'l2')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="m1" display="style:block" onClick="hide1('m1', 'm2')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="n1" display="style:block" onClick="hide1('n1', 'n2')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="o1" display="style:block" onClick="hide1('o1', 'o2')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="p1" display="style:block" onClick="hide1('p1', 'p2')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+
+							</div>
+						</div>
+					</section>
+
+
+					<section id="drop-panel-1">
+						<div class="scroll-box-2">
+							<div id="tile-container-2">
+
+								<div class="tile2" id="a2" onClick="hide2('a1', 'a2')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="b2" onClick="hide2('b1', 'b2')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="c2" onClick="hide2('c1', 'c2')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="d2" onClick="hide2('d1', 'd2')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="e2" onClick="hide2('e1', 'e2')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="f2" onClick="hide2('f1', 'f2')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="g2" onClick="hide2('g1', 'g2')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="h2" onClick="hide2('h1', 'h2')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="i2" onClick="hide2('i1', 'i2')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="j2" onClick="hide2('j1', 'j2')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="k2" onClick="hide2('k1', 'k2')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="l2" onClick="hide2('l1', 'l2')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="m2" onClick="hide2('m1', 'm2')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="n2" onClick="hide2('n1', 'n2')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="o2" onClick="hide2('o1', 'o2')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="p2" onClick="hide2('p1', 'p2')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					<button class="v-button" role="button" onclick="check1()"> Submit </button>
+					<button class="v-button" role="button" onclick="reset1()"> Reset </button>
+					<button class="v-button" role="button" onclick="page2()"> Next </button>
+				</div>
+			</div>
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="page2" style="display: none">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<br>
+					<p>
+						Find all the vectors in the vector space spanned by
+						\(\begin{bmatrix}
+						1\\
+						0\\
+						1\\
+						1
+						\end{bmatrix}
+						\),
+
+						\(\begin{bmatrix}
+						1\\
+						1\\
+						1\\
+						0
+						\end{bmatrix}
+						\)
+						and
+						\(\begin{bmatrix}
+						0\\
+						1\\
+						1\\
+						1
+						\end{bmatrix}
+						\).
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					<section id="top-bar-2">
+						<div class="scroll-box-3">
+							<div id="tile-container-3">
+
+								<div class="tile" id="a3" display="style:block" onClick="hide3('a3', 'a4')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="b3" display="style:block" onClick="hide3('b3', 'b4')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="c3" display="style:block" onClick="hide3('c3', 'c4')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="d3" display="style:block" onClick="hide3('d3', 'd4')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="e3" display="style:block" onClick="hide3('e3', 'e4')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="f3" display="style:block" onClick="hide3('f3', 'f4')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="g3" display="style:block" onClick="hide3('g3', 'g4')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="h3" display="style:block" onClick="hide3('h3', 'h4')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="i3" display="style:block" onClick="hide3('i3', 'i4')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="j3" display="style:block" onClick="hide3('j3', 'j4')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="k3" display="style:block" onClick="hide3('k3', 'k4')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="l3" display="style:block" onClick="hide3('l3', 'l4')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="m3" display="style:block" onClick="hide3('m3', 'm4')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="n3" display="style:block" onClick="hide3('n3', 'n4')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="o3" display="style:block" onClick="hide3('o3', 'o4')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="p3" display="style:block" onClick="hide3('p3', 'p4')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+							</div>
+						</div>
+					</section>
+
+					<section id="drop-panel-2">
+						<div class="scroll-box-4">
+							<div id="tile-container-4">
+
+								<div class="tile2" id="a4" onClick="hide4('a3', 'a4')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="b4" onClick="hide4('b3', 'b4')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="c4" onClick="hide4('c3', 'c4')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="d4" onClick="hide4('d3', 'd4')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="e4" onClick="hide4('e3', 'e4')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="f4" onClick="hide4('f3', 'f4')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="g4" onClick="hide4('g3', 'g4')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="h4" onClick="hide4('h3', 'h4')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="i4" onClick="hide4('i3', 'i4')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="j4" onClick="hide4('j3', 'j4')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="k4" onClick="hide4('k3', 'k4')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="l4" onClick="hide4('l3', 'l4')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="m4" onClick="hide4('m3', 'm4')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="n4" onClick="hide4('n3', 'n4')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="o4" onClick="hide4('o3', 'o4')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="p4" onClick="hide4('p3', 'p4')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+							</div>
+						</div>
+					</section>
+					<button class="v-button" role="button" onclick="check2()"> Submit </button>
+					<button class="v-button" role="button" onclick="reset2()"> Reset </button>
+					<button class="v-button" role="button" onclick="page1()"> Previous </button>
+					<button class="v-button" role="button" onclick="page3()"> Next </button>
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations2">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="page3" style="display: none">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<br>
+					<p>
+						Find all the vectors in the vector space spanned by
+						\(\begin{bmatrix}
+						0\\
+						0\\
+						1\\
+						0
+						\end{bmatrix}
+						\),
+
+						\(\begin{bmatrix}
+						1\\
+						0\\
+						0\\
+						0
+						\end{bmatrix}
+						\)
+						and
+						\(\begin{bmatrix}
+						1\\
+						1\\
+						0\\
+						0
+						\end{bmatrix}
+						\).
+					</p>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					<section id="top-bar-3">
+						<div class="scroll-box-5">
+							<div id="tile-container-5">
+								<div class="tile" id="a5" display="style:block" onClick="hide5('a5', 'a6')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="b5" display="style:block" onClick="hide5('b5', 'b6')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="c5" display="style:block" onClick="hide5('c5', 'c6')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="d5" display="style:block" onClick="hide5('d5', 'd6')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="e5" display="style:block" onClick="hide5('e5', 'e6')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="f5" display="style:block" onClick="hide5('f5', 'f6')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="g5" display="style:block" onClick="hide5('g5', 'g6')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="h5" display="style:block" onClick="hide5('h5', 'h6')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="i5" display="style:block" onClick="hide5('i5', 'i6')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="j5" display="style:block" onClick="hide5('j5', 'j6')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="k5" display="style:block" onClick="hide5('k5', 'k6')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="l5" display="style:block" onClick="hide5('l5', 'l6')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="m5" display="style:block" onClick="hide5('m5', 'm6')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="n5" display="style:block" onClick="hide5('n5', 'n6')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="o5" display="style:block" onClick="hide5('o5', 'o6')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile" id="p5" display="style:block" onClick="hide5('p5', 'p6')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+							</div>
+						</div>
+					</section>
+
+					<section id="drop-panel-3">
+						<div class="scroll-box-6">
+							<div id="tile-container-6">
+								<div class="tile2" id="a6" onClick="hide6('a5', 'a6')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="b6" onClick="hide6('b5', 'b6')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="c6" onClick="hide6('c5', 'c6')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="d6" onClick="hide6('d5', 'd6')">
+									$$ \begin{bmatrix}
+									0\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="e6" onClick="hide6('e5', 'e6')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="f6" onClick="hide6('f5', 'f6')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="g6" onClick="hide6('g5', 'g6')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="h6" onClick="hide6('h5', 'h6')">
+									$$ \begin{bmatrix}
+									0\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="i6" onClick="hide6('i5', 'i6')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="j6" onClick="hide6('j5', 'j6')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="k6" onClick="hide6('k5', 'k6')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="l6" onClick="hide6('l5', 'l6')">
+									$$ \begin{bmatrix}
+									1\\
+									0\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="m6" onClick="hide6('m5', 'm6')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="n6" onClick="hide6('n5', 'n6')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									0\\
+									1\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="o6" onClick="hide6('o5', 'o6')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									0\end{bmatrix}$$
+								</div>
+
+								<div class="tile2" id="p6" onClick="hide6('p5', 'p6')">
+									$$ \begin{bmatrix}
+									1\\
+									1\\
+									1\\
+									1\end{bmatrix}$$
+								</div>
+
+							</div>
+						</div>
+					</section>
+					<button class="v-button" role="button" onclick="check3()"> Submit </button>
+					<button class="v-button" role="button" onclick="reset3()"> Reset </button>
+					<button class="v-button" role="button" onclick="page2()"> Previous </button>
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations3">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+	<script src="./js/span.js"></script>
+</body>
+
+
+</html>
