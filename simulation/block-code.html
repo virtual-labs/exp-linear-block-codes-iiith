@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/block-code.css">
+	<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	<title>
+		Block Codes
+	</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-one-quarter v-instruction-title">
+				Tasks
+			</div>
+			<div class="column">
+				<div class="v-tabs">
+					<ul>
+						<li class="is-active" id="Task1">
+							<a>
+								Block Codes
+							</a>
+						</li>
+
+						<li id="Task2" onclick="window.location.href = 'encoding-repetition.html';">
+							<a>
+								Encoding - REP Codes
+							</a>
+						</li>
+
+						<li id="Task3" onclick="window.location.href = 'encoding-spc.html';">
+							<a>
+								Encoding - SPC Codes
+							</a>
+						</li>
+
+						<li id="Task4" onclick="window.location.href = 'decoding.html';">
+							<a>
+								Majority Logic Decoding
+							</a>
+						</li>
+
+						<li id="Task5" onclick="window.location.href = 'error-detection.html';">
+							<a>
+								Error Detection
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- <h1 style="text-align: center;">Encoding</h1> -->
+
+		<div class="columns is-centered">
+			<div class="column">
+				<div class="v-collapsible-instruction-container v-instruction-container">
+					<div class="v-collapsible is-size-5">Instructions</div>
+					<div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+						<ul style="list-style: disc;">
+							<b>Quick theory overview:</b>
+							<li>
+							  Here, <b>n</b> denotes the length of the codeword and <b>k</b> denotes the number of message bits.
+							</li>
+
+							<li>
+								For a non-linear block code, \(M\) is the total number of codewords and the rate is
+								R = \(\frac{log_2 M}{n}\).
+
+							</li>
+
+							<li>
+								For a linear block code, \(2^k\) is the total number of codewords and the rate is R
+								= \(\frac{k}{n}\).
+							</li>
+
+							<li> The minimum distance of a block code denoted by \(d_{min}\) is the minimum Hamming
+								distance over all the distinct codewords in the codebook.
+							</li>
+						</ul>
+
+						<br>
+
+						<ul style="list-style: disc;">
+							<b>Procedure:</b>
+							<li>
+								Enter the values in the fields and click on <b>Submit</b>.
+							</li>
+
+							<li>
+								The rate should be rounded to 2 decimal places.
+							</li>
+
+							<li>
+								The correctness of the entered answer is displayed in <b>Observations</b>.
+							</li>
+
+							<li>
+								<b>Next</b> - Displays the next example.
+							</li>
+
+							<li>
+								<b>Previous</b> - Displays the previous example.
+							</li>
+
+							</p>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<section id="example1">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container">
+					<br>
+					<p style="text-align: center; font-size: 1.25em;"> <b>Codebook:</b> </p>
+					<br>
+					<div>
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+					<!-- <img src="./images/hamming-distance.png" width="200"> -->
+					<br>
+					Enter the parameters of the given non-linear block code.
+
+					<form action="" method="get" id="form1" onsubmit="return false">
+
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">n =</i> &nbsp; </label>
+							<input type="number" id="n1" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">M =</i> &nbsp; </label>
+							<input type="number" id="m1" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">d =</i> &nbsp; </label>
+							<input type="number" id="d1" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">R =</i> &nbsp; </label>
+							<input type="number" id="r1" min="0" step="any">
+						</div>
+						<br>
+
+						<button class="v-button" role="button" onclick="verify1()" form="form1"> Submit
+						</button>
+						<button class="v-button" role="button" onclick="page2()"> Next </button>
+					</form>
+
+
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="example2" style="display: none">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container">
+					<br>
+					<p style="text-align: center; font-size: 1.25em;"> <b>Codebook:</b> </p>
+					<br>
+					<div>
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+					<!-- <img src="./images/hamming-distance.png" width="200"> -->
+					<br>
+					Enter the parameters of the \( (n, M, d) \) non-linear block code.
+
+					<form action="" method="get" id="form2" onsubmit="return false">
+
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">n =</i> &nbsp; </label>
+							<input type="number" id="n2" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">M =</i> &nbsp; </label>
+							<input type="number" id="m2" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">d =</i> &nbsp; </label>
+							<input type="number" id="d2" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">R =</i> &nbsp; </label>
+							<input type="number" id="r2" min="0" step="any">
+						</div>
+						<br>
+
+						<button class="v-button" role="button" onclick="verify2()" form="form2"> Submit
+						</button>
+						<button class="v-button" role="button" onclick="page1()"> Previous </button>
+						<button class="v-button" role="button" onclick="page3()"> Next </button>
+					</form>
+
+
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations2">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="example3" style="display: none">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container">
+					<br>
+					<p style="text-align: center; font-size: 1.25em;"> <b>Codebook:</b> </p>
+					<br>
+					<div>
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+					<!-- <img src="./images/hamming-weight.png" width="250"> -->
+					<br>
+					Enter the parameters of the \( (n, k, d) \) linear block code.
+
+					<form action="" method="get" id="form3" onsubmit="return false">
+
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">n =</i> &nbsp; </label>
+							<input type="number" id="n3" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">k =</i> &nbsp; </label>
+							<input type="number" id="k3" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">d =</i> &nbsp; </label>
+							<input type="number" id="d3" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">R =</i> &nbsp; </label>
+							<input type="number" id="r3" min="0" step="any">
+						</div>
+						<br>
+
+						<button class="v-button" role="button" onclick="verify3()" form="form3"> Submit
+						</button>
+						<button class="v-button" role="button" onclick="page2()"> Previous </button>
+						<button class="v-button" role="button" onclick="page4()"> Next </button>
+					</form>
+
+
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations3">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="example4" style="display: none">
+		<div class="columns is-centered">
+			<div class="column is-11-desktop is-12-tablet is-12-mobile">
+				<div class="v-datalist-container">
+					<br>
+					<p style="text-align: center; font-size: 1.25em;"> <b>Codebook:</b> </p>
+					<br>
+					<div>
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								0
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+
+						<div class="code-word">
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+							<div class="code-box">
+								1
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+					<!-- <img src="./images/hamming-weight.png" width="250"> -->
+					<br>
+					Enter the parameters of the \( (n, k, d) \) linear block code.
+
+					<form action="" method="get" id="form4" onsubmit="return false">
+
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">n =</i> &nbsp; </label>
+							<input type="number" id="n4" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">k =</i> &nbsp; </label>
+							<input type="number" id="k4" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">d =</i> &nbsp; </label>
+							<input type="number" id="d4" min="0">
+						</div>
+
+						<div class="field">
+							<label> <i style="font-weight: 600;">R =</i> &nbsp; </label>
+							<input type="number" id="r4" min="0" step="any">
+						</div>
+						<br>
+
+						<button class="v-button" role="button" onclick="verify4()" form="form4"> Submit
+						</button>
+						<button class="v-button" role="button" onclick="page3()"> Previous </button>
+					</form>
+
+
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations4">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+	<script src="./js/block-code.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+
+
+</html>
