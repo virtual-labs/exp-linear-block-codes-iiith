@@ -22,3 +22,5 @@ The structure of the experiment is as follows:
    - Encoding- SPC codes
    - Majority logic decoding for REP codes
    - Error detection for SPC codes
+### Aim of the experiment
+

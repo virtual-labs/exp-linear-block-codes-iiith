@@ -481,3 +481,4 @@ For $\mathbf{y}_1$: Check parity sum: $1 + 1 + 1 + 0 = 1 \neq 0 \pmod{2}$. **Err
 For $\mathbf{y}_2$: Check parity sum: $1 + 1 + 0 + 0 = 0 \pmod{2}$. **No error detected** (either no errors occurred, or an even number of errors occurred).
 
 c) **Limitation:** If the transmitted codeword $\mathbf{v}_1 = \begin{bmatrix}1 & 0 & 1 & 0\end{bmatrix}$ is corrupted to $\mathbf{y} = \begin{bmatrix}0 & 1 & 1 & 0\end{bmatrix}$ (2 bits flipped), the parity sum is $0 + 1 + 1 + 0 = 0 \pmod{2}$, so no error is detected. SPC codes can detect odd numbers of errors but not even numbers.
+### Link your theory in here
